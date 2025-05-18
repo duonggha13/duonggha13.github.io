@@ -3,6 +3,8 @@ languageCode = "en"
 defaultContentLanguage = "en"
 title = "mbn blog"
 theme = "anubis2"
+publishDir = "docs"
+
 
 [pagination]
 pagerSize = 5
