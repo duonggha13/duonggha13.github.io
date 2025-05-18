@@ -1,0 +1,21 @@
+[submodule "themes/anubis"]
+	path = themes/anubis
+	url = https://github.com/hugo-theme-anubis2/hugo-theme-anubis2
+[submodule "themes/fluency"]
+	path = themes/fluency
+	url = https://github.com/wayjam/hugo-theme-fluency.git
+[submodule "themes/loveIt"]
+	path = themes/loveIt
+	url = https://github.com/dillonzq/LoveIt.git
+[submodule "themes/hello-friend-ng"]
+	path = themes/hello-friend-ng
+	url = https://github.com/rhazdon/hugo-theme-hello-friend-ng.git
+[submodule "themes/zen"]
+	path = themes/zen
+	url = https://github.com/frjo/hugo-theme-zen.git
+[submodule "themes/anubis-theme"]
+	path = themes/anubis-theme
+	url = https://github.com/hugo-theme-anubis2/hugo-theme-anubis2.git
+[submodule "themes/anubis2"]
+	path = themes/anubis2
+	url = https://github.com/hugo-theme-anubis2/hugo-theme-anubis2.git
