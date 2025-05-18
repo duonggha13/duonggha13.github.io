@@ -10,7 +10,6 @@
 
 <html lang="en" data-theme="">
 <head>
-	<meta name="generator" content="Hugo 0.147.3">
     
         
 <meta charset="utf-8">
@@ -19,15 +18,14 @@
 <meta name="referrer" content="no-referrer-when-downgrade">
 <meta name="theme-name" content="Anubis2">
 
-<title>mbn blog</title>
+<title>Post here - mbn blog</title>
 
-<meta name="description" content="Anubis2 is another simple minimalist theme for Hugo blog engine.">
-
-
+<meta name="description" content="">
 
 
 
-<link rel="alternate" type="application/rss+xml" href="/index.xml" title="mbn blog" />
+
+
 <link rel="icon" type="image/x-icon" href="https://duonggha13.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://duonggha13.github.io/favicon.png">
 
@@ -518,43 +516,19 @@
         </header>
         <main id="main" tabindex="-1">
             
-    <div class="homepage-content">
-        
-    </div>
+    
 
-    <div class="articles h-feed">
-        
-        
-            <article class="post-list h-feed post-card">
-    <div class="post-header">
-        <header>
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                
+                
+                
+                <h1 class="p-name post-title draft ">Post here</h1>
+                
+
+            </header>
             
-            
-            
-            <h1 class="p-name post-title draft ">
-                <a class="u-url" href="/posts/18052025/">Post here</a>
-            </h1>
-        </header>
-        
-
-    </div>
-
-    
-        <div class="content post-summary p-summary">
-            
-        </div>
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-
-    
 
     
 
@@ -579,43 +553,141 @@
     </div>
 </div>
 
-</article>
-
-        
-        
+        </div>
         
 
-    </div>
+  
+  
+
+
+
+
+  
+  
+
+
+
+<script>
+  var toc = document.querySelector(".toc");
+  if (toc) {
+    toc.addEventListener("click", function () {
+      if (event.target.tagName !== "A") {
+        event.preventDefault();
+        if (this.open) {
+          this.open = false;
+          this.classList.remove("expanded");
+        } else {
+          this.open = true;
+          this.classList.add("expanded");
+        }
+      }
+    });
+  }
+</script>
+
+        <div class="content e-content">
+            
+        </div>
+
+    </article>
 
     
     
-    
-    
         
     
-        
+
     
         
-    
         
     
-        
+
     
         
+
+
+
+
     
-        
-    
-        
-    
-        
+
     
         
     
 
     
-    
-    
         
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+  
+
+
+
+
+
+
+<script>
+        function detectCurrentScheme2() {
+                const defaultTheme = "auto";
+                if (localStorage !== null && localStorage.getItem("user-color-scheme")) {
+                        return localStorage.getItem("user-color-scheme");
+                }
+                if (defaultTheme === "dark" || defaultTheme === "light") {
+                        return defaultTheme;
+                }
+                return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+
+        let giscusTheme = detectCurrentScheme2();
+        let giscusAttributes = {
+                src: "https://giscus.app/client.js",
+                "data-repo": "hugo-theme-anubis2\/hugo-theme-anubis2",
+                "data-repo-id": "R_kgDOLEp76Q",
+                "data-category": "General",
+                "data-category-id": "DIC_kwDOLEp76c4CcbPS",
+                "data-mapping": "pathname",
+                "data-strict": "0",
+                "data-reactions-enabled": "1",
+                "data-emit-metadata": "0",
+                "data-input-position": "bottom",
+                "data-theme": giscusTheme,
+                "data-lang": "en",
+                crossorigin: "anonymous",
+                lazyload: "false",
+                async: true,
+        };
+        let main = document.querySelector("main");
+        let giscusScript = document.createElement("script");
+        Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
+        main.appendChild(giscusScript);
+</script>
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    
+    
     
 
         </main>
