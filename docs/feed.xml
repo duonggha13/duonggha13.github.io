@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <generator uri="https://gohugo.io/" version="0.147.3">Hugo</generator>
+    <title>mbn blog</title>
+            <link href="http://localhost:1313/" rel="alternate" type="text/html" title="html" />
+            <link href="http://localhost:1313/feed.xml" rel="self" type="application/atom+xml" title="atom" />
+    <updated>2025-05-21T13:56:57+07:00</updated>
+    <id>http://localhost:1313/</id>
+        <entry>
+            <title>Git Cơ Bản</title>
+            <link href="http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/" rel="alternate" type="text/html"  hreflang="en" />
+            <id>http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/</id>
+            <published>2025-05-21T01:22:32+07:00</published>
+            <updated>2025-05-21T01:22:32+07:00</updated>
+            <content type="html">
+                &lt;div class=&#34;flex align-center gblog-post__anchorwrap&#34;&gt;
+    &lt;h1 id=&#34;bài-biết-sẽ-giới-thiệu-những-kiến-thức-và-các-câu-lệnh-cơ-bản-của-git&#34;
+    &gt;
+        Bài biết sẽ giới thiệu những kiến thức và các câu lệnh cơ bản của Git
+    &lt;/h1&gt;
+    &lt;a data-clipboard-text=&#34;http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/#bài-biết-sẽ-giới-thiệu-những-kiến-thức-và-các-câu-lệnh-cơ-bản-của-git&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Bài biết sẽ giới thiệu những kiến thức và các câu lệnh cơ bản của Git&#34; href=&#34;#b%c3%a0i-bi%e1%ba%bft-s%e1%ba%bd-gi%e1%bb%9bi-thi%e1%bb%87u-nh%e1%bb%afng-ki%e1%ba%bfn-th%e1%bb%a9c-v%c3%a0-c%c3%a1c-c%c3%a2u-l%e1%bb%87nh-c%c6%a1-b%e1%ba%a3n-c%e1%bb%a7a-git&#34;&gt;
+        &lt;svg class=&#34;gblog-icon gblog_link&#34;&gt;&lt;use xlink:href=&#34;#gblog_link&#34;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;br&gt;
+Trước khi đi đến khái niệm của Git, chúng ta cần biết về kiểm soát phiên bản - version control
+&lt;div class=&#34;flex align-center gblog-post__anchorwrap&#34;&gt;
+    &lt;h2 id=&#34;version-control-là-gì-tại-sao-chúng-ta-cần-quan-tâm&#34;
+    &gt;
+        Version control là gì? Tại sao chúng ta cần quan tâm?
+    &lt;/h2&gt;
+    &lt;a data-clipboard-text=&#34;http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/#version-control-là-gì-tại-sao-chúng-ta-cần-quan-tâm&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Version control là gì? Tại sao chúng ta cần quan tâm?&#34; href=&#34;#version-control-l%c3%a0-g%c3%ac-t%e1%ba%a1i-sao-ch%c3%bang-ta-c%e1%ba%a7n-quan-t%c3%a2m&#34;&gt;
+        &lt;svg class=&#34;gblog-icon gblog_link&#34;&gt;&lt;use xlink:href=&#34;#gblog_link&#34;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Version control là một hệ thống ghi lại thay đổi một tệp hoặc một tập hợp các tệp theo thời gian, giúp chúng ta có thể quay lại phiên bản cụ thể sau này.&lt;br&gt;&lt;br&gt;
+Các loại Version Control System (VCS): &lt;br&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hệ thống kiểm soát cục bộ (Local Version Control Systems):
+&lt;ul&gt;
+&lt;li&gt;Đặc điểm: Lưu trữ tất cả thay đổi trên máy tính cá nhân người dùng, các phiên bản được quản lý bằng cách tạo các bản sao&lt;/li&gt;
+&lt;li&gt;Ưu điểm: Đơn gỉản, dễ sử dụng, không cần mạng&lt;/li&gt;
+&lt;li&gt;Nhược điểm: Dễ bị mất dữ liệu khi máy tính hỏng, khó làm việc nhóm&lt;/li&gt;
+&lt;li&gt;Ví dụ: RCS - Revision Control System&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Hệ thống kiểm soát tập trung (Centralized Version Control Systems - CVCSs)
+&lt;ul&gt;
+&lt;li&gt;Đặc điểm: Một máy chủ trung tâm lưu trữ toàn bộ các phiên bản, các máy khách sẽ truy cập và chỉnh sửa dữ liệu lên máy chủ&lt;/li&gt;
+&lt;li&gt;Ưu điểm: Dễ quản lý, kiểm soát quyền truy cập tốt&lt;/li&gt;
+&lt;li&gt;Nhược điểm: Dễ bị mất dữ liệu khi máy chủ hỏng, làm việc cần kết nối mạng&lt;/li&gt;
+&lt;li&gt;Ví dụ:
+&lt;ul&gt;
+&lt;li&gt;SVN - Apache Subversion&lt;/li&gt;
+&lt;li&gt;CVS - Concurrent Versions System&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Hệ thống kiểm soát phiên bản phân tán (Distributed Version Control Systems - DVCSs)
+&lt;ul&gt;
+&lt;li&gt;Đặc điểm: Mỗi người dùng có đầy đủ bản sao của kho lưu trữ (repository) trên máy tính&lt;/li&gt;
+&lt;li&gt;Ưu điểm:
+&lt;ul&gt;
+&lt;li&gt;Linh hoạt, làm việc nhóm tốt&lt;/li&gt;
+&lt;li&gt;Không phụ thuộc vào máy chủ trung tâm&lt;/li&gt;
+&lt;li&gt;Dễ tạo nhánh và hợp nhất&lt;/li&gt;
+&lt;li&gt;Có thể làm việc offline, sau đó đồng bộ dữ liệu với những bản sao khác&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Nhược điểm
+&lt;ul&gt;
+&lt;li&gt;Đòi hỏi người dùng có kiến thức sâu với quy trình làm việc của hệ thống&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Ví dụ:
+&lt;ul&gt;
+&lt;li&gt;Git&lt;/li&gt;
+&lt;li&gt;Mercurial&lt;/li&gt;
+&lt;li&gt;Darcs&lt;/li&gt;
+&lt;li&gt;Bazaar&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Giờ chúng ta hãy cùng tìm hiểu về Git nhé&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;flex align-center gblog-post__anchorwrap&#34;&gt;
+    &lt;h2 id=&#34;git-là-gì&#34;
+    &gt;
+        Git là gì?
+    &lt;/h2&gt;
+    &lt;a data-clipboard-text=&#34;http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/#git-là-gì&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Git là gì?&#34; href=&#34;#git-l%c3%a0-g%c3%ac&#34;&gt;
+        &lt;svg class=&#34;gblog-icon gblog_link&#34;&gt;&lt;use xlink:href=&#34;#gblog_link&#34;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Git là một hệ thống kiểm soát phiên bản phân tán (Distributed Version Control System - DVCSs). Git ra đời năm 2005 bởi Linus Torvalds, ban đầu Git được tạo ra phục vụ nhu quản lý mã nguồn phát triển nhân Linux sau khi bị mất quyền truy cập vào công cụ BitKeeper.&lt;/p&gt;
+&lt;div class=&#34;flex align-center gblog-post__anchorwrap&#34;&gt;
+    &lt;h2 id=&#34;khi-nào-nên-sử-dụng-git&#34;
+    &gt;
+        Khi nào nên sử dụng Git?
+    &lt;/h2&gt;
+    &lt;a data-clipboard-text=&#34;http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/#khi-nào-nên-sử-dụng-git&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Khi nào nên sử dụng Git?&#34; href=&#34;#khi-n%c3%a0o-n%c3%aan-s%e1%bb%ad-d%e1%bb%a5ng-git&#34;&gt;
+        &lt;svg class=&#34;gblog-icon gblog_link&#34;&gt;&lt;use xlink:href=&#34;#gblog_link&#34;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Git là một hệ thống kiểm soát phiên bản phân tán, với những tính chất của DVCSs, Git thích hợp sử dụng khi:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Làm việc nhóm hay dự án có nhiều người tham gia: Cho phép mỗi cá nhân chỉnh sửa đồng thời mà không lo xung đột&lt;/li&gt;
+&lt;li&gt;Quản lý lịch sử thay đổi và phục hồi phiên bản: Các phiên bản được lưu trữ phục vụ việc khôi phục khi cần thiết&lt;/li&gt;
+&lt;li&gt;Phát triển tính năng mới hoặc thử ngiệm: Tạo nhánh riêng để phát triển tính năng mới hoặc thử nghiệm mà không ảnh hưởng đến mã nguồn chính&lt;/li&gt;
+&lt;li&gt;Làm việc từ xa hoặc ngoại tuyến: Làm việc ngoại tuyến trên kho lưu trữ cục bộ&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;flex align-center gblog-post__anchorwrap&#34;&gt;
+    &lt;h2 id=&#34;tại-sao-bạn-nên-chọn-git-thay-vì-các-dvcss-khác&#34;
+    &gt;
+        Tại sao bạn nên chọn Git thay vì các DVCSs khác?
+    &lt;/h2&gt;
+    &lt;a data-clipboard-text=&#34;http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/#tại-sao-bạn-nên-chọn-git-thay-vì-các-dvcss-khác&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Tại sao bạn nên chọn Git thay vì các DVCSs khác?&#34; href=&#34;#t%e1%ba%a1i-sao-b%e1%ba%a1n-n%c3%aan-ch%e1%bb%8dn-git-thay-v%c3%ac-c%c3%a1c-dvcss-kh%c3%a1c&#34;&gt;
+        &lt;svg class=&#34;gblog-icon gblog_link&#34;&gt;&lt;use xlink:href=&#34;#gblog_link&#34;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Git có những đặc điểm nổi bật mà bạn nên chọn Git&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Có cộng đồng rộng lớn&lt;/strong&gt;: Git có một cộng đồng người dùng rộng lớn và năng động, cung cấp nhiều tài nguyên học tập, hỗ trợ và công cụ bổ trợ. Điều này giúp bạn dễ dàng tìm kiếm sự trợ giúp và giải quyết vấn đề khi gặp khó khăn.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hiệu suất cao&lt;/strong&gt;: Git được thiết kế để xử lý nhanh chóng các thao tác như commit, merge và checkout, ngay cả với các dự án lớn&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hỗ trợ branching và merging mạnh mẽ&lt;/strong&gt;: Việc tạo nhánh (branch) và hợp nhất (merge) trong Git rất nhẹ nhàng và hiệu quả, giúp quản lý các luồng phát triển song song một cách dễ dàng.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bảo toàn toàn vẹn dữ liệu&lt;/strong&gt;: Git sử dụng thuật toán SHA-1 để đảm bảo rằng mọi thay đổi đều được theo dõi và không bị mất mát dữ liệu&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mã nguồn mở và miễn phí&lt;/strong&gt;: Git là phần mềm mã nguồn mở, cho phép cộng đồng đóng góp và phát triển liên tục&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Bạn có thể tham khảo thêm tài liệu so sánh các hệ thống DVCSs tại: &lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://en.wikipedia.org/wiki/Comparison_of_version-control_software&#34;
+&gt;comparision of version control software&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;flex align-center gblog-post__anchorwrap&#34;&gt;
+    &lt;h2 id=&#34;các-tính-năng-nổi-bật-của-git&#34;
+    &gt;
+        Các tính năng nổi bật của Git
+    &lt;/h2&gt;
+    &lt;a data-clipboard-text=&#34;http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/#các-tính-năng-nổi-bật-của-git&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Các tính năng nổi bật của Git&#34; href=&#34;#c%c3%a1c-t%c3%adnh-n%c4%83ng-n%e1%bb%95i-b%e1%ba%adt-c%e1%bb%a7a-git&#34;&gt;
+        &lt;svg class=&#34;gblog-icon gblog_link&#34;&gt;&lt;use xlink:href=&#34;#gblog_link&#34;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Cách lưu trữ dữ liệu: snapshot
+Thay vì lưu trữ dưới dạng &amp;ldquo;delta&amp;rdquo; - các thay đổi của các tệp theo thời gian (sự khác biệt giữa các phiên bản)
+&lt;img
+  src=&#34;/images/git/image.png&#34;
+  alt=&#34;alt text&#34;
+  
+/&gt;
+&lt;em&gt;Image Credit: Pro Git book&lt;/em&gt;
+&lt;br&gt;
+&lt;br&gt;
+Thì thì lưu trữ dữ liệu như một chuỗi các ảnh chụp (snapshot) của toàn bộ dự án tại thời điểm commit. Nếu không có gì thay đổi Git chỉ tạo liên kết đến phiên bản trước đó giúp tiết kiệm dung lượng và tăng hiệu suất
+&lt;img
+  src=&#34;/images/git/image-1.png&#34;
+  alt=&#34;alt text&#34;
+  
+/&gt;
+&lt;em&gt;Image Credit: Pro Git book&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Hầu hết các thao tác là cục bộ: Git thực hiện các thao tác như xem lịch sử, so sánh thay đổi, commit ngay trên máy cục bộ mà không cần kết nối mạng.&lt;/li&gt;
+&lt;li&gt;Tính toàn vẹn dữ liệu: Mỗi tệp trong Git đều được kiểm tra bằng mã băm SHA-1 đảm bảo không có dữ liệu nào thay đổi mà không bị phát hiện, giúp bảo vệ dữ liệu khỏi sự cố hay bị thay đổi không mong muốn&lt;/li&gt;
+&lt;li&gt;Git chủ yếu chỉ thêm dữ liệu: Git được thiết kế để tránh mất mát dữ liệu, hầu hết chỉ thực hiện thêm dữ liệu vào cơ sở dữ liệu Git, giúp lấy lại dữ liệu dễ dàng khi bị xoá nhầm hay thay đổi sai.&lt;/li&gt;
+&lt;li&gt;Ba trạng thái chính trong Git:
+&lt;ul&gt;
+&lt;li&gt;Git theo dõi các tệp thông qua ba trạng thái
+&lt;ul&gt;
+&lt;li&gt;Modified (đã chỉnh sửa): Tệp được thay đổi nhưng chư đưa vào khu vực staging&lt;/li&gt;
+&lt;li&gt;Staged (đã đưa vào staging): Tệp đã được đánh dấu để đưa vào commit&lt;/li&gt;
+&lt;li&gt;Commited (đã commit): Tệp đã được lưu trữ an toàn trong cơ sở dữ liệu của Git&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Ba thành phần chính tương ứng là
+&lt;ul&gt;
+&lt;li&gt;Working Directory (thư mục làm việc): Nơi bạn chỉnh sửa tệp&lt;/li&gt;
+&lt;li&gt;Staging Area (khu vực staging): Nơi bạn chuẩn bị các thay đổi cho commit&lt;/li&gt;
+&lt;li&gt;Git Directory (thư mục Git): Nơi Git lưu trữ dữ liệu và lịch sử của dự án&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;flex align-center gblog-post__anchorwrap&#34;&gt;
+    &lt;h2 id=&#34;các-khái-niệm-cơ-bản-trong-git&#34;
+    &gt;
+        Các khái niệm cơ bản trong Git
+    &lt;/h2&gt;
+    &lt;a data-clipboard-text=&#34;http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/#các-khái-niệm-cơ-bản-trong-git&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Các khái niệm cơ bản trong Git&#34; href=&#34;#c%c3%a1c-kh%c3%a1i-ni%e1%bb%87m-c%c6%a1-b%e1%ba%a3n-trong-git&#34;&gt;
+        &lt;svg class=&#34;gblog-icon gblog_link&#34;&gt;&lt;use xlink:href=&#34;#gblog_link&#34;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Để sử dụng Git hiệu quả, trước tiên các bạn cần hiểu một số khái niệm cốt lõi của Git&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Repository (Repo)
+&amp;mdash;&amp;mdash;- Updating &amp;mdash;&amp;mdash;-&lt;/li&gt;
+&lt;/ol&gt;
+
+            </content>  
+        </entry>
+</feed>
