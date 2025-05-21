@@ -6,7 +6,7 @@
   class="color-toggle-hidden"
   
 >
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="UTF-8" />
 <meta name="referrer" content="no-referrer" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,7 +34,7 @@
     
   <meta property="og:site_name" content="mbn blog" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/" />
+<meta property="og:url" content="https://duonggha13.github.io/" />
 
 
 
@@ -49,7 +49,7 @@
       "@type": "WebSite",
       
       "name": "mbn blog",
-      "url": "http://localhost:1313/",
+      "url": "https://duonggha13.github.io/",
       "inLanguage": "en"
   }
   </script>
@@ -124,8 +124,8 @@
   href="/custom.css"
   media="all"
 />
-  <link href="http://localhost:1313/" rel="canonical" type="text/html" />
-    <link href="http://localhost:1313/feed.xml" rel="alternate" type="application/atom+xml" title="mbn blog atom Feed" />
+  <link href="https://duonggha13.github.io/" rel="canonical" type="text/html" />
+    <link href="https://duonggha13.github.io/feed.xml" rel="alternate" type="application/atom+xml" title="mbn blog atom Feed" />
 
 <!-- Made with Geekblog theme https://github.com/thegeeklab/hugo-geekblog -->
 
@@ -148,7 +148,7 @@
   <div class="container flex flex-wrap">
     <div class="gblog-header__col-1 flex justify-start hidden-mobile"></div>
     <div class="gblog-header__col-2 flex align-center justify-center ">
-      <a class="gblog-header__link" rel="me" href="http://localhost:1313/">
+      <a class="gblog-header__link" rel="me" href="https://duonggha13.github.io/">
         <span class="gblog-brand flex align-center justify-center">
           <img
             class="gblog-brand__img"
@@ -215,15 +215,82 @@
       </header>
 
       <section class="gblog-markdown">
-        <div class="flex align-center gblog-post__anchorwrap">
-    <h1 id="bài-biết-sẽ-giới-thiệu-những-kiến-thức-và-các-câu-lệnh-cơ-bản-của-git"
-    >
-        Bài biết sẽ giới thiệu những kiến thức và các câu lệnh cơ bản của Git
-    </h1>
-    <a data-clipboard-text="http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/#bài-biết-sẽ-giới-thiệu-những-kiến-thức-và-các-câu-lệnh-cơ-bản-của-git" class="gblog-post__anchor clip flex align-center" aria-label="Anchor Bài biết sẽ giới thiệu những kiến thức và các câu lệnh cơ bản của Git" href="#b%c3%a0i-bi%e1%ba%bft-s%e1%ba%bd-gi%e1%bb%9bi-thi%e1%bb%87u-nh%e1%bb%afng-ki%e1%ba%bfn-th%e1%bb%a9c-v%c3%a0-c%c3%a1c-c%c3%a2u-l%e1%bb%87nh-c%c6%a1-b%e1%ba%a3n-c%e1%bb%a7a-git">
-        <svg class="gblog-icon gblog_link"><use xlink:href="#gblog_link"></use></svg>
-    </a>
-</div>
+        <p><strong>Nội dung bài viết</strong></p>
+<ul>
+<li><a
+  class="gblog-markdown__link"
+  href="#version-control-l%c3%a0-g%c3%ac-t%e1%ba%a1i-sao-ch%c3%bang-ta-c%e1%ba%a7n-quan-t%c3%a2m"
+>Version control là gì? Tại sao chúng ta cần quan tâm?</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="#git-l%c3%a0-g%c3%ac"
+>Git là gì?</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="#khi-n%c3%a0o-n%c3%aan-s%e1%bb%ad-d%e1%bb%a5ng-git"
+>Khi nào nên sử dụng Git?</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="#t%e1%ba%a1i-sao-b%e1%ba%a1n-n%c3%aan-ch%e1%bb%8dn-git-thay-v%c3%ac-c%c3%a1c-dvcss-kh%c3%a1c"
+>Tại sao bạn nên chọn Git thay vì các DVCSs khác?</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="#c%c3%a1c-t%c3%adnh-n%c4%83ng-n%e1%bb%95i-b%e1%ba%adt-c%e1%bb%a7a-git"
+>Các tính năng nổi bật của Git</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="#c%c3%a1c-kh%c3%a1i-ni%e1%bb%87m-c%c6%a1-b%e1%ba%a3n-trong-git"
+>Các khái niệm cơ bản trong Git</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="#c%c3%a0i-%c4%91%e1%ba%b7t-git"
+>Cài đặt Git</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="#c%c3%a1c-c%c3%a2u-l%e1%bb%87nh-git-c%c6%a1-b%e1%ba%a3n"
+>Các câu lệnh Git cơ bản</a>
+<ul>
+<li><a
+  class="gblog-markdown__link"
+  href="#kh%e1%bb%9fi-t%e1%ba%a1o-v%c3%a0-nh%e1%ba%adn-kho-l%c6%b0u-tr%e1%bb%af-getting-creating-repository"
+>Khởi tạo và nhận kho lưu trữ (Getting, Creating Repository)</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="#ch%e1%bb%a5p-h%c3%acnh-c%c6%a1-b%e1%ba%a3n-snapshotting"
+>Chụp hình cơ bản (Snapshotting)</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="#chia-nh%c3%a1nh-v%c3%a0-h%e1%bb%a3p-nh%e1%ba%a5t-branching-merging"
+>Chia nhánh và hợp nhất (Branching, Merging)</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="#chia-s%e1%ba%bb-v%c3%a0-c%e1%ba%adp-nh%e1%ba%adt-d%e1%bb%b1-%c3%a1n-sharing-updating-project"
+>Chia sẻ và cập nhật dự án (Sharing, Updating Project)</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="#ki%e1%bb%83m-tra-v%c3%a0-so-s%c3%a1nh-inspection-comparison"
+>Kiểm tra và so sánh (Inspection, Comparison)</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="#g%e1%bb%a1-l%e1%bb%97i---t%c3%acm-nguy%c3%aan-nh%c3%a2n-debugging"
+>Gỡ lỗi - tìm nguyên nhân (Debugging)</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="#v%c3%a1-l%e1%bb%97i-patching"
+>Vá lỗi (Patching)</a></li>
+</ul>
+</li>
+<li><a
+  class="gblog-markdown__link"
+  href="#best-practices-v%e1%bb%9bi-git"
+>Best Practices với Git</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="#t%e1%bb%95ng-k%e1%ba%bft"
+>Tổng kết</a></li>
+</ul>
+<br>
+Bài biết sẽ giới thiệu những kiến thức và các câu lệnh cơ bản của Git
 <br>
 Trước khi đi đến khái niệm của Git, chúng ta cần biết về kiểm soát phiên bản - version control
 <div class="flex align-center gblog-post__anchorwrap">
@@ -231,7 +298,7 @@ Trước khi đi đến khái niệm của Git, chúng ta cần biết về ki�
     >
         Version control là gì? Tại sao chúng ta cần quan tâm?
     </h2>
-    <a data-clipboard-text="http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/#version-control-là-gì-tại-sao-chúng-ta-cần-quan-tâm" class="gblog-post__anchor clip flex align-center" aria-label="Anchor Version control là gì? Tại sao chúng ta cần quan tâm?" href="#version-control-l%c3%a0-g%c3%ac-t%e1%ba%a1i-sao-ch%c3%bang-ta-c%e1%ba%a7n-quan-t%c3%a2m">
+    <a data-clipboard-text="https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#version-control-là-gì-tại-sao-chúng-ta-cần-quan-tâm" class="gblog-post__anchor clip flex align-center" aria-label="Anchor Version control là gì? Tại sao chúng ta cần quan tâm?" href="#version-control-l%c3%a0-g%c3%ac-t%e1%ba%a1i-sao-ch%c3%bang-ta-c%e1%ba%a7n-quan-t%c3%a2m">
         <svg class="gblog-icon gblog_link"><use xlink:href="#gblog_link"></use></svg>
     </a>
 </div>
@@ -265,7 +332,7 @@ Các loại Version Control System (VCS): <br></p>
 
 <span class="flex align-center no-wrap gblog-post__meta--readtime">
   <svg class="gblog-icon gblog_timer"><use xlink:href="#gblog_timer"></use></svg>
-  <span class="gblog-post__tag">6 min read</span>
+  <span class="gblog-post__tag">13 min read</span>
 </span>
 
 

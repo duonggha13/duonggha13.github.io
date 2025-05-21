@@ -43,3 +43,10 @@ disablePathToLower = true
   section = ["HTML"]
   taxonomy = ["HTML"]
   term = ["HTML", "ATOM"]
+
+[params.footer]
+  showFooter = true
+
+[[params.footerLinks]]
+  name = "About"
+  url = "/about/"

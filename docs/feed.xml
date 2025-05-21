@@ -2,26 +2,93 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <generator uri="https://gohugo.io/" version="0.147.3">Hugo</generator>
     <title>mbn blog</title>
-            <link href="http://localhost:1313/" rel="alternate" type="text/html" title="html" />
-            <link href="http://localhost:1313/feed.xml" rel="self" type="application/atom+xml" title="atom" />
-    <updated>2025-05-21T13:56:57+07:00</updated>
-    <id>http://localhost:1313/</id>
+            <link href="https://duonggha13.github.io/" rel="alternate" type="text/html" title="html" />
+            <link href="https://duonggha13.github.io/feed.xml" rel="self" type="application/atom+xml" title="atom" />
+    <updated>2025-05-21T17:03:00+07:00</updated>
+    <id>https://duonggha13.github.io/</id>
         <entry>
             <title>Git Cơ Bản</title>
-            <link href="http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/" rel="alternate" type="text/html"  hreflang="en" />
-            <id>http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/</id>
+            <link href="https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/" rel="alternate" type="text/html"  hreflang="en" />
+            <id>https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/</id>
             <published>2025-05-21T01:22:32+07:00</published>
             <updated>2025-05-21T01:22:32+07:00</updated>
             <content type="html">
-                &lt;div class=&#34;flex align-center gblog-post__anchorwrap&#34;&gt;
-    &lt;h1 id=&#34;bài-biết-sẽ-giới-thiệu-những-kiến-thức-và-các-câu-lệnh-cơ-bản-của-git&#34;
-    &gt;
-        Bài biết sẽ giới thiệu những kiến thức và các câu lệnh cơ bản của Git
-    &lt;/h1&gt;
-    &lt;a data-clipboard-text=&#34;http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/#bài-biết-sẽ-giới-thiệu-những-kiến-thức-và-các-câu-lệnh-cơ-bản-của-git&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Bài biết sẽ giới thiệu những kiến thức và các câu lệnh cơ bản của Git&#34; href=&#34;#b%c3%a0i-bi%e1%ba%bft-s%e1%ba%bd-gi%e1%bb%9bi-thi%e1%bb%87u-nh%e1%bb%afng-ki%e1%ba%bfn-th%e1%bb%a9c-v%c3%a0-c%c3%a1c-c%c3%a2u-l%e1%bb%87nh-c%c6%a1-b%e1%ba%a3n-c%e1%bb%a7a-git&#34;&gt;
-        &lt;svg class=&#34;gblog-icon gblog_link&#34;&gt;&lt;use xlink:href=&#34;#gblog_link&#34;&gt;&lt;/use&gt;&lt;/svg&gt;
-    &lt;/a&gt;
-&lt;/div&gt;
+                &lt;p&gt;&lt;strong&gt;Nội dung bài viết&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;#version-control-l%c3%a0-g%c3%ac-t%e1%ba%a1i-sao-ch%c3%bang-ta-c%e1%ba%a7n-quan-t%c3%a2m&#34;
+&gt;Version control là gì? Tại sao chúng ta cần quan tâm?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;#git-l%c3%a0-g%c3%ac&#34;
+&gt;Git là gì?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;#khi-n%c3%a0o-n%c3%aan-s%e1%bb%ad-d%e1%bb%a5ng-git&#34;
+&gt;Khi nào nên sử dụng Git?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;#t%e1%ba%a1i-sao-b%e1%ba%a1n-n%c3%aan-ch%e1%bb%8dn-git-thay-v%c3%ac-c%c3%a1c-dvcss-kh%c3%a1c&#34;
+&gt;Tại sao bạn nên chọn Git thay vì các DVCSs khác?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;#c%c3%a1c-t%c3%adnh-n%c4%83ng-n%e1%bb%95i-b%e1%ba%adt-c%e1%bb%a7a-git&#34;
+&gt;Các tính năng nổi bật của Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;#c%c3%a1c-kh%c3%a1i-ni%e1%bb%87m-c%c6%a1-b%e1%ba%a3n-trong-git&#34;
+&gt;Các khái niệm cơ bản trong Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;#c%c3%a0i-%c4%91%e1%ba%b7t-git&#34;
+&gt;Cài đặt Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;#c%c3%a1c-c%c3%a2u-l%e1%bb%87nh-git-c%c6%a1-b%e1%ba%a3n&#34;
+&gt;Các câu lệnh Git cơ bản&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;#kh%e1%bb%9fi-t%e1%ba%a1o-v%c3%a0-nh%e1%ba%adn-kho-l%c6%b0u-tr%e1%bb%af-getting-creating-repository&#34;
+&gt;Khởi tạo và nhận kho lưu trữ (Getting, Creating Repository)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;#ch%e1%bb%a5p-h%c3%acnh-c%c6%a1-b%e1%ba%a3n-snapshotting&#34;
+&gt;Chụp hình cơ bản (Snapshotting)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;#chia-nh%c3%a1nh-v%c3%a0-h%e1%bb%a3p-nh%e1%ba%a5t-branching-merging&#34;
+&gt;Chia nhánh và hợp nhất (Branching, Merging)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;#chia-s%e1%ba%bb-v%c3%a0-c%e1%ba%adp-nh%e1%ba%adt-d%e1%bb%b1-%c3%a1n-sharing-updating-project&#34;
+&gt;Chia sẻ và cập nhật dự án (Sharing, Updating Project)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;#ki%e1%bb%83m-tra-v%c3%a0-so-s%c3%a1nh-inspection-comparison&#34;
+&gt;Kiểm tra và so sánh (Inspection, Comparison)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;#g%e1%bb%a1-l%e1%bb%97i---t%c3%acm-nguy%c3%aan-nh%c3%a2n-debugging&#34;
+&gt;Gỡ lỗi - tìm nguyên nhân (Debugging)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;#v%c3%a1-l%e1%bb%97i-patching&#34;
+&gt;Vá lỗi (Patching)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;#best-practices-v%e1%bb%9bi-git&#34;
+&gt;Best Practices với Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;#t%e1%bb%95ng-k%e1%ba%bft&#34;
+&gt;Tổng kết&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+Bài biết sẽ giới thiệu những kiến thức và các câu lệnh cơ bản của Git
 &lt;br&gt;
 Trước khi đi đến khái niệm của Git, chúng ta cần biết về kiểm soát phiên bản - version control
 &lt;div class=&#34;flex align-center gblog-post__anchorwrap&#34;&gt;
@@ -29,7 +96,7 @@ Trước khi đi đến khái niệm của Git, chúng ta cần biết về ki�
     &gt;
         Version control là gì? Tại sao chúng ta cần quan tâm?
     &lt;/h2&gt;
-    &lt;a data-clipboard-text=&#34;http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/#version-control-là-gì-tại-sao-chúng-ta-cần-quan-tâm&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Version control là gì? Tại sao chúng ta cần quan tâm?&#34; href=&#34;#version-control-l%c3%a0-g%c3%ac-t%e1%ba%a1i-sao-ch%c3%bang-ta-c%e1%ba%a7n-quan-t%c3%a2m&#34;&gt;
+    &lt;a data-clipboard-text=&#34;https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#version-control-là-gì-tại-sao-chúng-ta-cần-quan-tâm&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Version control là gì? Tại sao chúng ta cần quan tâm?&#34; href=&#34;#version-control-l%c3%a0-g%c3%ac-t%e1%ba%a1i-sao-ch%c3%bang-ta-c%e1%ba%a7n-quan-t%c3%a2m&#34;&gt;
         &lt;svg class=&#34;gblog-icon gblog_link&#34;&gt;&lt;use xlink:href=&#34;#gblog_link&#34;&gt;&lt;/use&gt;&lt;/svg&gt;
     &lt;/a&gt;
 &lt;/div&gt;
@@ -90,7 +157,7 @@ Các loại Version Control System (VCS): &lt;br&gt;&lt;/p&gt;
     &gt;
         Git là gì?
     &lt;/h2&gt;
-    &lt;a data-clipboard-text=&#34;http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/#git-là-gì&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Git là gì?&#34; href=&#34;#git-l%c3%a0-g%c3%ac&#34;&gt;
+    &lt;a data-clipboard-text=&#34;https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#git-là-gì&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Git là gì?&#34; href=&#34;#git-l%c3%a0-g%c3%ac&#34;&gt;
         &lt;svg class=&#34;gblog-icon gblog_link&#34;&gt;&lt;use xlink:href=&#34;#gblog_link&#34;&gt;&lt;/use&gt;&lt;/svg&gt;
     &lt;/a&gt;
 &lt;/div&gt;
@@ -100,7 +167,7 @@ Các loại Version Control System (VCS): &lt;br&gt;&lt;/p&gt;
     &gt;
         Khi nào nên sử dụng Git?
     &lt;/h2&gt;
-    &lt;a data-clipboard-text=&#34;http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/#khi-nào-nên-sử-dụng-git&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Khi nào nên sử dụng Git?&#34; href=&#34;#khi-n%c3%a0o-n%c3%aan-s%e1%bb%ad-d%e1%bb%a5ng-git&#34;&gt;
+    &lt;a data-clipboard-text=&#34;https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#khi-nào-nên-sử-dụng-git&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Khi nào nên sử dụng Git?&#34; href=&#34;#khi-n%c3%a0o-n%c3%aan-s%e1%bb%ad-d%e1%bb%a5ng-git&#34;&gt;
         &lt;svg class=&#34;gblog-icon gblog_link&#34;&gt;&lt;use xlink:href=&#34;#gblog_link&#34;&gt;&lt;/use&gt;&lt;/svg&gt;
     &lt;/a&gt;
 &lt;/div&gt;
@@ -116,7 +183,7 @@ Các loại Version Control System (VCS): &lt;br&gt;&lt;/p&gt;
     &gt;
         Tại sao bạn nên chọn Git thay vì các DVCSs khác?
     &lt;/h2&gt;
-    &lt;a data-clipboard-text=&#34;http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/#tại-sao-bạn-nên-chọn-git-thay-vì-các-dvcss-khác&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Tại sao bạn nên chọn Git thay vì các DVCSs khác?&#34; href=&#34;#t%e1%ba%a1i-sao-b%e1%ba%a1n-n%c3%aan-ch%e1%bb%8dn-git-thay-v%c3%ac-c%c3%a1c-dvcss-kh%c3%a1c&#34;&gt;
+    &lt;a data-clipboard-text=&#34;https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#tại-sao-bạn-nên-chọn-git-thay-vì-các-dvcss-khác&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Tại sao bạn nên chọn Git thay vì các DVCSs khác?&#34; href=&#34;#t%e1%ba%a1i-sao-b%e1%ba%a1n-n%c3%aan-ch%e1%bb%8dn-git-thay-v%c3%ac-c%c3%a1c-dvcss-kh%c3%a1c&#34;&gt;
         &lt;svg class=&#34;gblog-icon gblog_link&#34;&gt;&lt;use xlink:href=&#34;#gblog_link&#34;&gt;&lt;/use&gt;&lt;/svg&gt;
     &lt;/a&gt;
 &lt;/div&gt;
@@ -137,7 +204,7 @@ Các loại Version Control System (VCS): &lt;br&gt;&lt;/p&gt;
     &gt;
         Các tính năng nổi bật của Git
     &lt;/h2&gt;
-    &lt;a data-clipboard-text=&#34;http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/#các-tính-năng-nổi-bật-của-git&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Các tính năng nổi bật của Git&#34; href=&#34;#c%c3%a1c-t%c3%adnh-n%c4%83ng-n%e1%bb%95i-b%e1%ba%adt-c%e1%bb%a7a-git&#34;&gt;
+    &lt;a data-clipboard-text=&#34;https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#các-tính-năng-nổi-bật-của-git&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Các tính năng nổi bật của Git&#34; href=&#34;#c%c3%a1c-t%c3%adnh-n%c4%83ng-n%e1%bb%95i-b%e1%ba%adt-c%e1%bb%a7a-git&#34;&gt;
         &lt;svg class=&#34;gblog-icon gblog_link&#34;&gt;&lt;use xlink:href=&#34;#gblog_link&#34;&gt;&lt;/use&gt;&lt;/svg&gt;
     &lt;/a&gt;
 &lt;/div&gt;
@@ -186,15 +253,572 @@ Thì thì lưu trữ dữ liệu như một chuỗi các ảnh chụp (snapshot)
     &gt;
         Các khái niệm cơ bản trong Git
     &lt;/h2&gt;
-    &lt;a data-clipboard-text=&#34;http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/#các-khái-niệm-cơ-bản-trong-git&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Các khái niệm cơ bản trong Git&#34; href=&#34;#c%c3%a1c-kh%c3%a1i-ni%e1%bb%87m-c%c6%a1-b%e1%ba%a3n-trong-git&#34;&gt;
+    &lt;a data-clipboard-text=&#34;https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#các-khái-niệm-cơ-bản-trong-git&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Các khái niệm cơ bản trong Git&#34; href=&#34;#c%c3%a1c-kh%c3%a1i-ni%e1%bb%87m-c%c6%a1-b%e1%ba%a3n-trong-git&#34;&gt;
         &lt;svg class=&#34;gblog-icon gblog_link&#34;&gt;&lt;use xlink:href=&#34;#gblog_link&#34;&gt;&lt;/use&gt;&lt;/svg&gt;
     &lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;Để sử dụng Git hiệu quả, trước tiên các bạn cần hiểu một số khái niệm cốt lõi của Git&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Repository (Repo)
-&amp;mdash;&amp;mdash;- Updating &amp;mdash;&amp;mdash;-&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Repository (Repo)
+Repository là nơi lưu trữ toàn bộ mã nguồn và lịch sử thay đổi của một dự án. Có 2 loại repository:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Local Repository: Dữ liệu trên máy cá nhân của bạn&lt;/li&gt;
+&lt;li&gt;Remote Repository: Dữ liệu nằm trên máy chủ Git như GitHub, GitLab, Bitbucket
+Một dự án thường có 2 Git thường bao gồm cả 2 loại, bạn sẽ làm việc với local và sau đó đồng bộ lên remote repository&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Commit
+Commit được hiểu là một ảnh chụp (snapshot) các thay đổi tại một thời điểm. Một commit sẽ lưu nội dung:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nội dung thay đổi&lt;/li&gt;
+&lt;li&gt;Thời gian commit&lt;/li&gt;
+&lt;li&gt;Người thực hiện commit&lt;/li&gt;
+&lt;li&gt;Lời nhắn (commit message)
+Commit giúp quay lại phiên bản cũ và theo dõi quá trình phát triển của dự án&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Branch
+Nhánh, là dòng phát triển độc lập của dự án. Mặc định Git có một nhánh chính gọi là &lt;code&gt;main&lt;/code&gt; hoặc &lt;code&gt;master&lt;/code&gt;. Bạn có thể tạo nhánh để thực hiện việc thêm tính năng, sửa lỗi, thử nghiệm,.. mà không ảnh hưởng đến mã chính của dự án&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Merge
+Merge là hành độnh hợp nhất 2 nhánh lại với nhau, việc merge có thể tạo ra xung đột, Git sẽ báo để bạn xử lý&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rebase
+Rebase là một cách khác để hợp nhất thay đổi giữa các nhánh, nhưng thay vì hợp nhất như merge thì rebase di chuyển lịch sử thay đổi của một nhánh lên đầu nhánh đích, rebase giúp lịch sử commit đơn giản nhưng cũng có thể xảy ra xung đột&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;HEAD
+HEAD là con trỏ trỏ tới commit hiện tại bạn đang làm việc, nếu HEAD không gắn với nhánh nào, bạn đang ở trạng thái detached HEAD&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
+&lt;div class=&#34;flex align-center gblog-post__anchorwrap&#34;&gt;
+    &lt;h2 id=&#34;cài-đặt-git&#34;
+    &gt;
+        Cài đặt Git
+    &lt;/h2&gt;
+    &lt;a data-clipboard-text=&#34;https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#cài-đặt-git&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Cài đặt Git&#34; href=&#34;#c%c3%a0i-%c4%91%e1%ba%b7t-git&#34;&gt;
+        &lt;svg class=&#34;gblog-icon gblog_link&#34;&gt;&lt;use xlink:href=&#34;#gblog_link&#34;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Cài đặt Git cho Linux:&lt;br&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nếu bạn sử dụng Fedora, hay những hệ điều hành RPM-based như RHEL hay CentOS, sử dụng dnf
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo dnf install git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Nếu bạn sử dụng Debian-base như Ubuntu, sử dụng apt
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Chi tiết cài đặt cho từng hệ điều hành xem tại trang chính thức git: &lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/downloads&#34;
+&gt;download git&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;flex align-center gblog-post__anchorwrap&#34;&gt;
+    &lt;h2 id=&#34;các-câu-lệnh-git-cơ-bản&#34;
+    &gt;
+        Các câu lệnh Git cơ bản
+    &lt;/h2&gt;
+    &lt;a data-clipboard-text=&#34;https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#các-câu-lệnh-git-cơ-bản&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Các câu lệnh Git cơ bản&#34; href=&#34;#c%c3%a1c-c%c3%a2u-l%e1%bb%87nh-git-c%c6%a1-b%e1%ba%a3n&#34;&gt;
+        &lt;svg class=&#34;gblog-icon gblog_link&#34;&gt;&lt;use xlink:href=&#34;#gblog_link&#34;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&#34;flex align-center gblog-post__anchorwrap&#34;&gt;
+    &lt;h3 id=&#34;khởi-tạo-và-nhận-kho-lưu-trữ-getting-creating-repository&#34;
+    &gt;
+        Khởi tạo và nhận kho lưu trữ (Getting, Creating Repository)
+    &lt;/h3&gt;
+    &lt;a data-clipboard-text=&#34;https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#khởi-tạo-và-nhận-kho-lưu-trữ-getting-creating-repository&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Khởi tạo và nhận kho lưu trữ (Getting, Creating Repository)&#34; href=&#34;#kh%e1%bb%9fi-t%e1%ba%a1o-v%c3%a0-nh%e1%ba%adn-kho-l%c6%b0u-tr%e1%bb%af-getting-creating-repository&#34;&gt;
+        &lt;svg class=&#34;gblog-icon gblog_link&#34;&gt;&lt;use xlink:href=&#34;#gblog_link&#34;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-init&#34;
+&gt;init&lt;/a&gt;
+Tạo một kho chứa rỗng hoặc khởi tạo lại kho lưu trữ hiện có
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; /path/to/my/codebase
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git init      &lt;span class=&#34;c1&#34;&gt;#Tạo thư mục /path/to/my/codebase/.git&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-clone&#34;
+&gt;clone&lt;/a&gt;
+Tải dữ liệu bản sao của kho chứ remote về máy cá nhân
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://github.com/user/project.git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;flex align-center gblog-post__anchorwrap&#34;&gt;
+    &lt;h3 id=&#34;chụp-hình-cơ-bản-snapshotting&#34;
+    &gt;
+        Chụp hình cơ bản (Snapshotting)
+    &lt;/h3&gt;
+    &lt;a data-clipboard-text=&#34;https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#chụp-hình-cơ-bản-snapshotting&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Chụp hình cơ bản (Snapshotting)&#34; href=&#34;#ch%e1%bb%a5p-h%c3%acnh-c%c6%a1-b%e1%ba%a3n-snapshotting&#34;&gt;
+        &lt;svg class=&#34;gblog-icon gblog_link&#34;&gt;&lt;use xlink:href=&#34;#gblog_link&#34;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-add&#34;
+&gt;add&lt;/a&gt;
+Thêm tệp vào khu vực staging để chuẩn bị commit.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add file.txt      &lt;span class=&#34;c1&#34;&gt;# Thêm một tệp cụ thể&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add .             &lt;span class=&#34;c1&#34;&gt;# Thêm tất cả thay đổi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-status&#34;
+&gt;status&lt;/a&gt;
+Kiểm tra trạng thái các tệp: đã thay đổi, đã staged hay chưa&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git status
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-diff&#34;
+&gt;diff&lt;/a&gt;
+Hiển thị sự khác biệt giữa các thay đổi. Hữu ích để xem chi tiết trước khi add hay commit.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git diff
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-commit&#34;
+&gt;commit&lt;/a&gt;
+Lưu snapshot hiện tại vào lịch sử Git.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git commit -m &lt;span class=&#34;s2&#34;&gt;&amp;#34;lời nhắn commit&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-notes&#34;
+&gt;notes&lt;/a&gt;
+Ghi chú thêm vào commit mà không thay đổi nội dung commit&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git notes add -m &lt;span class=&#34;s2&#34;&gt;&amp;#34;Thêm ghi chú cho commit này&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git notes show &amp;lt;commit&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-restore&#34;
+&gt;restore&lt;/a&gt;
+Khôi phục tệp về trạng thái trước đó&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git restore file.txt                      &lt;span class=&#34;c1&#34;&gt;# Khôi phục file.txt từ index&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git restore --source&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;HEAD~1 file.txt      &lt;span class=&#34;c1&#34;&gt;# Khôi phục file từ commit cụ thể&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-reset&#34;
+&gt;reset&lt;/a&gt;
+Reset lại index hoặc HEAD&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git reset --soft HEAD~1   &lt;span class=&#34;c1&#34;&gt;# Quay lại commit trước, giữ lại thay đổi trong staging&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git reset --hard HEAD~1   &lt;span class=&#34;c1&#34;&gt;# Xóa hoàn toàn thay đổi, quay về commit trước&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-rm&#34;
+&gt;rm&lt;/a&gt;
+Xoá tệp khỏi Git (và có thể khỏi thư mục làm việc)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git rm file.txt            &lt;span class=&#34;c1&#34;&gt;# Xoá file khỏi repo và thư mục làm việc&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git rm --cached file.txt   &lt;span class=&#34;c1&#34;&gt;# Chỉ xoá khỏi Git (không xoá trên ổ đĩa)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-mv&#34;
+&gt;mv&lt;/a&gt;
+Đổi tên hoặc di chuyển file trong Git&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git mv old_name.txt new_name.txt
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;flex align-center gblog-post__anchorwrap&#34;&gt;
+    &lt;h3 id=&#34;chia-nhánh-và-hợp-nhất-branching-merging&#34;
+    &gt;
+        Chia nhánh và hợp nhất (Branching, Merging)
+    &lt;/h3&gt;
+    &lt;a data-clipboard-text=&#34;https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#chia-nhánh-và-hợp-nhất-branching-merging&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Chia nhánh và hợp nhất (Branching, Merging)&#34; href=&#34;#chia-nh%c3%a1nh-v%c3%a0-h%e1%bb%a3p-nh%e1%ba%a5t-branching-merging&#34;&gt;
+        &lt;svg class=&#34;gblog-icon gblog_link&#34;&gt;&lt;use xlink:href=&#34;#gblog_link&#34;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-branch&#34;
+&gt;branch&lt;/a&gt;
+Tạo và quản lý nhánh
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git branch                  &lt;span class=&#34;c1&#34;&gt;# Liệt kê các nhánh&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git branch new-feature      &lt;span class=&#34;c1&#34;&gt;# Tạo nhánh mới&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-checkout&#34;
+&gt;checkout&lt;/a&gt;
+Chuyển nhánh hoặc khôi phục file
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git checkout main
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git checkout -- file.txt   &lt;span class=&#34;c1&#34;&gt;# Khôi phục file từ index&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-switch&#34;
+&gt;switch&lt;/a&gt;
+Thay thế checkout để chuyển nhánh (dễ hiểu hơn)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git switch main
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git switch -c new-branch   &lt;span class=&#34;c1&#34;&gt;# Tạo và chuyển sang nhánh mới&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-merge&#34;
+&gt;merge&lt;/a&gt;
+Gộp nhánh
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git merge feature-branch   &lt;span class=&#34;c1&#34;&gt;# Gộp nhánh vào nhánh hiện tại&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-mergetool&#34;
+&gt;mergetool&lt;/a&gt;
+Mở giao diện resolve conflict
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git mergetool              &lt;span class=&#34;c1&#34;&gt;# Dùng tool GUI để xử lý xung đột merge&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-log&#34;
+&gt;log&lt;/a&gt;
+Xem lịch sử commit
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git log --oneline --graph  &lt;span class=&#34;c1&#34;&gt;# Dạng cây ngắn gọn&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-stash&#34;
+&gt;stash&lt;/a&gt;
+Lưu tạm thay đổi chưa commit
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git stash                  &lt;span class=&#34;c1&#34;&gt;# Lưu thay đổi tạm thời&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git stash pop              &lt;span class=&#34;c1&#34;&gt;# Khôi phục và xoá stash&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-tag&#34;
+&gt;tag&lt;/a&gt;
+Gắn thẻ cho commit (ví dụ: release)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git tag v1.0               &lt;span class=&#34;c1&#34;&gt;# Gắn tag nhẹ&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git tag -a v1.1 -m &lt;span class=&#34;s2&#34;&gt;&amp;#34;release v1.1&amp;#34;&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;# Gắn tag có mô tả&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-worktree&#34;
+&gt;worktree&lt;/a&gt;
+Làm việc với nhiều thư mục cùng một repo
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git worktree add ../feature feature-branch
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;flex align-center gblog-post__anchorwrap&#34;&gt;
+    &lt;h3 id=&#34;chia-sẻ-và-cập-nhật-dự-án-sharing-updating-project&#34;
+    &gt;
+        Chia sẻ và cập nhật dự án (Sharing, Updating Project)
+    &lt;/h3&gt;
+    &lt;a data-clipboard-text=&#34;https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#chia-sẻ-và-cập-nhật-dự-án-sharing-updating-project&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Chia sẻ và cập nhật dự án (Sharing, Updating Project)&#34; href=&#34;#chia-s%e1%ba%bb-v%c3%a0-c%e1%ba%adp-nh%e1%ba%adt-d%e1%bb%b1-%c3%a1n-sharing-updating-project&#34;&gt;
+        &lt;svg class=&#34;gblog-icon gblog_link&#34;&gt;&lt;use xlink:href=&#34;#gblog_link&#34;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-fetch&#34;
+&gt;fetch&lt;/a&gt;
+Lấy dữ liệu từ remote nhưng không merge
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git fetch origin
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-pull&#34;
+&gt;pull&lt;/a&gt;
+Fetch + Merge hoặc Rebase
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git pull origin main
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-push&#34;
+&gt;push&lt;/a&gt;
+Đẩy commit lên remote
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push origin main
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-remote&#34;
+&gt;remote&lt;/a&gt;
+Quản lý remote
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git remote -v              &lt;span class=&#34;c1&#34;&gt;# Liệt kê remote&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git remote add origin &amp;lt;url&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-submodule&#34;
+&gt;submodule&lt;/a&gt;
+Nhúng repo bên ngoài vào project
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git submodule add &amp;lt;url&amp;gt; path/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git submodule update --init --recursive
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;flex align-center gblog-post__anchorwrap&#34;&gt;
+    &lt;h3 id=&#34;kiểm-tra-và-so-sánh-inspection-comparison&#34;
+    &gt;
+        Kiểm tra và so sánh (Inspection, Comparison)
+    &lt;/h3&gt;
+    &lt;a data-clipboard-text=&#34;https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#kiểm-tra-và-so-sánh-inspection-comparison&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Kiểm tra và so sánh (Inspection, Comparison)&#34; href=&#34;#ki%e1%bb%83m-tra-v%c3%a0-so-s%c3%a1nh-inspection-comparison&#34;&gt;
+        &lt;svg class=&#34;gblog-icon gblog_link&#34;&gt;&lt;use xlink:href=&#34;#gblog_link&#34;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-show&#34;
+&gt;show&lt;/a&gt;
+Hiển thị chi tiết commit
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git show HEAD
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-log&#34;
+&gt;log&lt;/a&gt;
+Xem nhật ký commit
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git log
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-diff&#34;
+&gt;diff&lt;/a&gt;
+So sánh sự khác biệt
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git diff                   &lt;span class=&#34;c1&#34;&gt;# So sánh working tree và index&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git diff HEAD              &lt;span class=&#34;c1&#34;&gt;# So sánh working tree với HEAD&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-difftool&#34;
+&gt;difftool&lt;/a&gt;
+Dùng GUI tool để xem diff
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git difftool
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-range-diff&#34;
+&gt;range-diff&lt;/a&gt;
+So sánh 2 dải commit
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git range-diff origin/main...HEAD
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-shortlog&#34;
+&gt;shortlog&lt;/a&gt;
+Tổng hợp commit theo tác giả
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git shortlog -sne
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-describe&#34;
+&gt;describe&lt;/a&gt;
+Gán tên cho commit theo tag gần nhất
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git describe --tags
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;flex align-center gblog-post__anchorwrap&#34;&gt;
+    &lt;h3 id=&#34;gỡ-lỗi---tìm-nguyên-nhân-debugging&#34;
+    &gt;
+        Gỡ lỗi - tìm nguyên nhân (Debugging)
+    &lt;/h3&gt;
+    &lt;a data-clipboard-text=&#34;https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#gỡ-lỗi---tìm-nguyên-nhân-debugging&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Gỡ lỗi - tìm nguyên nhân (Debugging)&#34; href=&#34;#g%e1%bb%a1-l%e1%bb%97i---t%c3%acm-nguy%c3%aan-nh%c3%a2n-debugging&#34;&gt;
+        &lt;svg class=&#34;gblog-icon gblog_link&#34;&gt;&lt;use xlink:href=&#34;#gblog_link&#34;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-apply&#34;
+&gt;apply&lt;/a&gt;
+Áp dụng file patch
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git apply fix.patch
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-cherry-pick&#34;
+&gt;cherry-pick&lt;/a&gt;
+Áp dụng commit cụ thể từ nhánh khác
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git cherry-pick &amp;lt;commit-hash&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-diff&#34;
+&gt;diff&lt;/a&gt;
+So sánh sự khác biệt
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git diff                   &lt;span class=&#34;c1&#34;&gt;# So sánh working tree và index&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git diff HEAD              &lt;span class=&#34;c1&#34;&gt;# So sánh working tree với HEAD&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-rebase&#34;
+&gt;rebase&lt;/a&gt;
+Chuyển base commit
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git rebase main
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-revert&#34;
+&gt;revert&lt;/a&gt;
+Tạo commit đảo ngược (tạo một commit mới có nội dung ngược lại với một commit đã tồn tại, nhằm hủy bỏ tác động của commit đó, nhưng vẫn giữ nguyên lịch sử commit)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git revert &amp;lt;commit-hash&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;flex align-center gblog-post__anchorwrap&#34;&gt;
+    &lt;h3 id=&#34;vá-lỗi-patching&#34;
+    &gt;
+        Vá lỗi (Patching)
+    &lt;/h3&gt;
+    &lt;a data-clipboard-text=&#34;https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#vá-lỗi-patching&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Vá lỗi (Patching)&#34; href=&#34;#v%c3%a1-l%e1%bb%97i-patching&#34;&gt;
+        &lt;svg class=&#34;gblog-icon gblog_link&#34;&gt;&lt;use xlink:href=&#34;#gblog_link&#34;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-bisect&#34;
+&gt;bisect&lt;/a&gt;
+Tìm commit gây lỗi theo nhị phân
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git bisect start
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git bisect bad             &lt;span class=&#34;c1&#34;&gt;# Commit hiện tại bị lỗi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git bisect good &amp;lt;commit&amp;gt;   &lt;span class=&#34;c1&#34;&gt;# Commit ổn định&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-blame&#34;
+&gt;blame&lt;/a&gt;
+Tìm ai đã thay đổi dòng code nào
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git blame file.txt
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs/git-grep&#34;
+&gt;grep&lt;/a&gt;
+Tìm chuỗi trong toàn bộ repo
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git grep &lt;span class=&#34;s2&#34;&gt;&amp;#34;function main&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;flex align-center gblog-post__anchorwrap&#34;&gt;
+    &lt;h2 id=&#34;best-practices-với-git&#34;
+    &gt;
+        Best Practices với Git
+    &lt;/h2&gt;
+    &lt;a data-clipboard-text=&#34;https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#best-practices-với-git&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Best Practices với Git&#34; href=&#34;#best-practices-v%e1%bb%9bi-git&#34;&gt;
+        &lt;svg class=&#34;gblog-icon gblog_link&#34;&gt;&lt;use xlink:href=&#34;#gblog_link&#34;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Đây một số best practices được tổng hợp dựa trên lý thuyết nền tảng, những kinh nghiệm làm việc của cá nhân tôi và những chia sẻ của cộng đồng sử dụng Git&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Kiểm tra thay đổi trước khi commit&lt;/strong&gt;
+&lt;br&gt;Luôn xem lại thay đổi kỹ lưỡng trước khi commit&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git diff
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Commit rõ ràng, ngắn gọn, có ý nghĩa&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Không nên:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Update&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Fix bug&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Nên:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Fix login form validation&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Refactor user authentication logic&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Commit nhỏ, rõ ràng về mặt logic&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nên:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Add password confirmation field&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Fix typo in README&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Không nên:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Add feature + fix 2 unrelated bugs&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Ví dụ theo &lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://www.conventionalcommits.org/&#34;
+&gt;Conventional Commits&lt;/a&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;feat: add search bar to header&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fix: handle empty input in login form&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docs: update API usage in README&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Dùng git stash khi đang dở dang&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Khi bạn đang làm dang dở nhưng cần chuyển sang một nhánh khác (ví dụ để fix bug khẩn cấp), git stash cho phép bạn:
+&lt;ul&gt;
+&lt;li&gt;Lưu lại những thay đổi tạm thời.&lt;/li&gt;
+&lt;li&gt;Trả lại repo về trạng thái sạch sẽ (working directory clean) mà không mất công việc đang làm.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Sử dụng nhánh (branch) hợp lý&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;main&lt;/code&gt;: Mã ổn định, có thể deploy&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;feature-&amp;lt;tên&amp;gt;&lt;/code&gt;: Phát triển tính năng&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bugfix-&amp;lt;tên&amp;gt;&lt;/code&gt;: Sửa lỗi&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hotfix-&amp;lt;tên&amp;gt;&lt;/code&gt;: Sửa lỗi khẩn cấp&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;release-&amp;lt;version&amp;gt;&lt;/code&gt;: Chuẩn bị phát hành&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Không commit file cấu hình cá nhân, commit sercet (mật khẩu, API key)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tránh commit .env, config.local.json, v.v.&lt;/li&gt;
+&lt;li&gt;Nên tạo file mẫu như .env.example&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;flex align-center gblog-post__anchorwrap&#34;&gt;
+    &lt;h2 id=&#34;tổng-kết&#34;
+    &gt;
+        Tổng kết
+    &lt;/h2&gt;
+    &lt;a data-clipboard-text=&#34;https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#tổng-kết&#34; class=&#34;gblog-post__anchor clip flex align-center&#34; aria-label=&#34;Anchor Tổng kết&#34; href=&#34;#t%e1%bb%95ng-k%e1%ba%bft&#34;&gt;
+        &lt;svg class=&#34;gblog-icon gblog_link&#34;&gt;&lt;use xlink:href=&#34;#gblog_link&#34;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Bài viết đã giới thiệu những kiến thức cơ bản của Git cũng như các câu lệnh cơ bản mà các lập trình viên thường hay sử dụng, cùng với một số best practices về Git. Hy vọng bài viết giúp các bạn làm quen và sử dụng Git một cách dễ dàng.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tài liệu tham khảo&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/docs&#34;
+&gt;Git Documents&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+  class=&#34;gblog-markdown__link&#34;
+  href=&#34;https://git-scm.com/book/en/v2&#34;
+&gt;Pro Git Book&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
             </content>  
         </entry>

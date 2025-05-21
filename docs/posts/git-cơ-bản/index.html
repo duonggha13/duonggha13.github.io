@@ -6,13 +6,14 @@
   class="color-toggle-hidden"
   
 >
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="UTF-8" />
 <meta name="referrer" content="no-referrer" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="generator" content="Hugo 0.147.3">
   <meta name="robots" content="index, follow" />
-  <meta name="description" content=" Bài biết sẽ giới thiệu những kiến thức và các câu lệnh cơ bản của Git Trước khi đi đến khái niệm của Git, chúng ta cần biết về kiểm soát phiên bản - version control Version control là gì? Tại sao chúng ta cần quan tâm? Version control là một hệ thống ghi lại thay đổi một tệp hoặc một tập hợp các tệp theo thời gian, giúp chúng ta có thể quay lại phiên bản cụ thể sau này.
+  <meta name="description" content="Nội dung bài viết
+Version control là gì? Tại sao chúng ta cần quan tâm? Git là gì? Khi nào nên sử dụng Git? Tại sao bạn nên chọn Git thay vì các DVCSs khác? Các tính năng nổi bật của Git Các khái niệm cơ bản trong Git Cài đặt Git Các câu lệnh Git cơ bản Khởi tạo và nhận kho lưu trữ (Getting, Creating Repository) Chụp hình cơ bản (Snapshotting) Chia nhánh và hợp nhất (Branching, Merging) Chia sẻ và cập nhật dự án (Sharing, Updating Project) Kiểm tra và so sánh (Inspection, Comparison) Gỡ lỗi - tìm nguyên nhân (Debugging) Vá lỗi (Patching) Best Practices với Git Tổng kết Bài biết sẽ giới thiệu những kiến thức và các câu lệnh cơ bản của Git Trước khi đi đến khái niệm của Git, chúng ta cần biết về kiểm soát phiên bản - version control Version control là gì? Tại sao chúng ta cần quan tâm? Version control là một hệ thống ghi lại thay đổi một tệp hoặc một tập hợp các tệp theo thời gian, giúp chúng ta có thể quay lại phiên bản cụ thể sau này.
 Các loại Version Control System (VCS): " />
 
     <title>Git Cơ Bản | mbn blog</title>
@@ -39,10 +40,11 @@ Các loại Version Control System (VCS): " />
     content="Git Cơ Bản"
   />
   <meta property="og:site_name" content="mbn blog" />
-  <meta property="og:description" content=" Bài biết sẽ giới thiệu những kiến thức và các câu lệnh cơ bản của Git Trước khi đi đến khái niệm của Git, chúng ta cần biết về kiểm soát phiên bản - version control Version control là gì? Tại sao chúng ta cần quan tâm? Version control là một hệ thống ghi lại thay đổi một tệp hoặc một tập hợp các tệp theo thời gian, giúp chúng ta có thể quay lại phiên bản cụ thể sau này.
+  <meta property="og:description" content="Nội dung bài viết
+Version control là gì? Tại sao chúng ta cần quan tâm? Git là gì? Khi nào nên sử dụng Git? Tại sao bạn nên chọn Git thay vì các DVCSs khác? Các tính năng nổi bật của Git Các khái niệm cơ bản trong Git Cài đặt Git Các câu lệnh Git cơ bản Khởi tạo và nhận kho lưu trữ (Getting, Creating Repository) Chụp hình cơ bản (Snapshotting) Chia nhánh và hợp nhất (Branching, Merging) Chia sẻ và cập nhật dự án (Sharing, Updating Project) Kiểm tra và so sánh (Inspection, Comparison) Gỡ lỗi - tìm nguyên nhân (Debugging) Vá lỗi (Patching) Best Practices với Git Tổng kết Bài biết sẽ giới thiệu những kiến thức và các câu lệnh cơ bản của Git Trước khi đi đến khái niệm của Git, chúng ta cần biết về kiểm soát phiên bản - version control Version control là gì? Tại sao chúng ta cần quan tâm? Version control là một hệ thống ghi lại thay đổi một tệp hoặc một tập hợp các tệp theo thời gian, giúp chúng ta có thể quay lại phiên bản cụ thể sau này.
 Các loại Version Control System (VCS): " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/" />
+<meta property="og:url" content="https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/" />
 
 <meta property="article:section" content="Posts" />
     <meta
@@ -57,7 +59,8 @@ Các loại Version Control System (VCS): " />
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Git Cơ Bản" />
-  <meta name="twitter:description" content=" Bài biết sẽ giới thiệu những kiến thức và các câu lệnh cơ bản của Git Trước khi đi đến khái niệm của Git, chúng ta cần biết về kiểm soát phiên bản - version control Version control là gì? Tại sao chúng ta cần quan tâm? Version control là một hệ thống ghi lại thay đổi một tệp hoặc một tập hợp các tệp theo thời gian, giúp chúng ta có thể quay lại phiên bản cụ thể sau này.
+  <meta name="twitter:description" content="Nội dung bài viết
+Version control là gì? Tại sao chúng ta cần quan tâm? Git là gì? Khi nào nên sử dụng Git? Tại sao bạn nên chọn Git thay vì các DVCSs khác? Các tính năng nổi bật của Git Các khái niệm cơ bản trong Git Cài đặt Git Các câu lệnh Git cơ bản Khởi tạo và nhận kho lưu trữ (Getting, Creating Repository) Chụp hình cơ bản (Snapshotting) Chia nhánh và hợp nhất (Branching, Merging) Chia sẻ và cập nhật dự án (Sharing, Updating Project) Kiểm tra và so sánh (Inspection, Comparison) Gỡ lỗi - tìm nguyên nhân (Debugging) Vá lỗi (Patching) Best Practices với Git Tổng kết Bài biết sẽ giới thiệu những kiến thức và các câu lệnh cơ bản của Git Trước khi đi đến khái niệm của Git, chúng ta cần biết về kiểm soát phiên bản - version control Version control là gì? Tại sao chúng ta cần quan tâm? Version control là một hệ thống ghi lại thay đổi một tệp hoặc một tập hợp các tệp theo thời gian, giúp chúng ta có thể quay lại phiên bản cụ thể sau này.
 Các loại Version Control System (VCS): " />
 
 <script type="application/ld+json">
@@ -66,15 +69,15 @@ Các loại Version Control System (VCS): " />
       "@type": "BlogPosting",
       "articleSection": "Posts",
       "name": "Git Cơ Bản",
-      "url" : "http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/",
+      "url" : "https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/",
       "headline": "Git Cơ Bản",
-      "description": " Bài biết sẽ giới thiệu những kiến thức và các câu lệnh cơ bản của Git Trước khi đi đến khái niệm của Git, chúng ta cần biết về kiểm soát phiên bản - version control Version control là gì? Tại sao chúng ta cần quan tâm? Version control là một hệ thống ghi lại thay đổi một tệp hoặc một tập hợp các tệp theo thời gian, giúp chúng ta có thể quay lại phiên bản cụ thể sau này.\nCác loại Version Control System (VCS): ",
-      "wordCount" : "1093",
+      "description": "Nội dung bài viết\nVersion control là gì? Tại sao chúng ta cần quan tâm? Git là gì? Khi nào nên sử dụng Git? Tại sao bạn nên chọn Git thay vì các DVCSs khác? Các tính năng nổi bật của Git Các khái niệm cơ bản trong Git Cài đặt Git Các câu lệnh Git cơ bản Khởi tạo và nhận kho lưu trữ (Getting, Creating Repository) Chụp hình cơ bản (Snapshotting) Chia nhánh và hợp nhất (Branching, Merging) Chia sẻ và cập nhật dự án (Sharing, Updating Project) Kiểm tra và so sánh (Inspection, Comparison) Gỡ lỗi - tìm nguyên nhân (Debugging) Vá lỗi (Patching) Best Practices với Git Tổng kết Bài biết sẽ giới thiệu những kiến thức và các câu lệnh cơ bản của Git Trước khi đi đến khái niệm của Git, chúng ta cần biết về kiểm soát phiên bản - version control Version control là gì? Tại sao chúng ta cần quan tâm? Version control là một hệ thống ghi lại thay đổi một tệp hoặc một tập hợp các tệp theo thời gian, giúp chúng ta có thể quay lại phiên bản cụ thể sau này.\nCác loại Version Control System (VCS): ",
+      "wordCount" : "2633",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/"
+          "@id": "https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/"
       },
       "author" : [
       ],
@@ -86,10 +89,10 @@ Các loại Version Control System (VCS): " />
       "publisher":{
           "@type":"Organization",
           "name": "mbn blog",
-          "url": "http://localhost:1313/",
+          "url": "https://duonggha13.github.io/",
           "logo": {
               "@type": "ImageObject",
-              "url": "http://localhost:1313/brand.svg",
+              "url": "https://duonggha13.github.io/brand.svg",
               "width":"32",
               "height":"32"
           }
@@ -167,8 +170,8 @@ Các loại Version Control System (VCS): " />
   href="/custom.css"
   media="all"
 />
-  <link href="http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/" rel="canonical" type="text/html" />
-    <link href="http://localhost:1313/feed.xml" rel="alternate" type="application/atom+xml" title="mbn blog atom Feed" />
+  <link href="https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/" rel="canonical" type="text/html" />
+    <link href="https://duonggha13.github.io/feed.xml" rel="alternate" type="application/atom+xml" title="mbn blog atom Feed" />
 
 <!-- Made with Geekblog theme https://github.com/thegeeklab/hugo-geekblog -->
 
@@ -191,7 +194,7 @@ Các loại Version Control System (VCS): " />
   <div class="container flex flex-wrap">
     <div class="gblog-header__col-1 flex justify-start hidden-mobile"></div>
     <div class="gblog-header__col-2 flex align-center justify-center ">
-      <a class="gblog-header__link" rel="me" href="http://localhost:1313/">
+      <a class="gblog-header__link" rel="me" href="https://duonggha13.github.io/">
         <span class="gblog-brand flex align-center justify-center">
           <img
             class="gblog-brand__img"
@@ -265,7 +268,7 @@ Các loại Version Control System (VCS): " />
 
 <span class="flex align-center no-wrap gblog-post__meta--readtime">
   <svg class="gblog-icon gblog_timer"><use xlink:href="#gblog_timer"></use></svg>
-  <span class="gblog-post__tag">6 min read</span>
+  <span class="gblog-post__tag">13 min read</span>
 </span>
 
 
@@ -284,15 +287,82 @@ Các loại Version Control System (VCS): " />
       
     </header>
     <section class="gblog-markdown">
-      <div class="flex align-center gblog-post__anchorwrap">
-    <h1 id="bài-biết-sẽ-giới-thiệu-những-kiến-thức-và-các-câu-lệnh-cơ-bản-của-git"
-    >
-        Bài biết sẽ giới thiệu những kiến thức và các câu lệnh cơ bản của Git
-    </h1>
-    <a data-clipboard-text="http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/#bài-biết-sẽ-giới-thiệu-những-kiến-thức-và-các-câu-lệnh-cơ-bản-của-git" class="gblog-post__anchor clip flex align-center" aria-label="Anchor Bài biết sẽ giới thiệu những kiến thức và các câu lệnh cơ bản của Git" href="#b%c3%a0i-bi%e1%ba%bft-s%e1%ba%bd-gi%e1%bb%9bi-thi%e1%bb%87u-nh%e1%bb%afng-ki%e1%ba%bfn-th%e1%bb%a9c-v%c3%a0-c%c3%a1c-c%c3%a2u-l%e1%bb%87nh-c%c6%a1-b%e1%ba%a3n-c%e1%bb%a7a-git">
-        <svg class="gblog-icon gblog_link"><use xlink:href="#gblog_link"></use></svg>
-    </a>
-</div>
+      <p><strong>Nội dung bài viết</strong></p>
+<ul>
+<li><a
+  class="gblog-markdown__link"
+  href="#version-control-l%c3%a0-g%c3%ac-t%e1%ba%a1i-sao-ch%c3%bang-ta-c%e1%ba%a7n-quan-t%c3%a2m"
+>Version control là gì? Tại sao chúng ta cần quan tâm?</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="#git-l%c3%a0-g%c3%ac"
+>Git là gì?</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="#khi-n%c3%a0o-n%c3%aan-s%e1%bb%ad-d%e1%bb%a5ng-git"
+>Khi nào nên sử dụng Git?</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="#t%e1%ba%a1i-sao-b%e1%ba%a1n-n%c3%aan-ch%e1%bb%8dn-git-thay-v%c3%ac-c%c3%a1c-dvcss-kh%c3%a1c"
+>Tại sao bạn nên chọn Git thay vì các DVCSs khác?</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="#c%c3%a1c-t%c3%adnh-n%c4%83ng-n%e1%bb%95i-b%e1%ba%adt-c%e1%bb%a7a-git"
+>Các tính năng nổi bật của Git</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="#c%c3%a1c-kh%c3%a1i-ni%e1%bb%87m-c%c6%a1-b%e1%ba%a3n-trong-git"
+>Các khái niệm cơ bản trong Git</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="#c%c3%a0i-%c4%91%e1%ba%b7t-git"
+>Cài đặt Git</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="#c%c3%a1c-c%c3%a2u-l%e1%bb%87nh-git-c%c6%a1-b%e1%ba%a3n"
+>Các câu lệnh Git cơ bản</a>
+<ul>
+<li><a
+  class="gblog-markdown__link"
+  href="#kh%e1%bb%9fi-t%e1%ba%a1o-v%c3%a0-nh%e1%ba%adn-kho-l%c6%b0u-tr%e1%bb%af-getting-creating-repository"
+>Khởi tạo và nhận kho lưu trữ (Getting, Creating Repository)</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="#ch%e1%bb%a5p-h%c3%acnh-c%c6%a1-b%e1%ba%a3n-snapshotting"
+>Chụp hình cơ bản (Snapshotting)</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="#chia-nh%c3%a1nh-v%c3%a0-h%e1%bb%a3p-nh%e1%ba%a5t-branching-merging"
+>Chia nhánh và hợp nhất (Branching, Merging)</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="#chia-s%e1%ba%bb-v%c3%a0-c%e1%ba%adp-nh%e1%ba%adt-d%e1%bb%b1-%c3%a1n-sharing-updating-project"
+>Chia sẻ và cập nhật dự án (Sharing, Updating Project)</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="#ki%e1%bb%83m-tra-v%c3%a0-so-s%c3%a1nh-inspection-comparison"
+>Kiểm tra và so sánh (Inspection, Comparison)</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="#g%e1%bb%a1-l%e1%bb%97i---t%c3%acm-nguy%c3%aan-nh%c3%a2n-debugging"
+>Gỡ lỗi - tìm nguyên nhân (Debugging)</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="#v%c3%a1-l%e1%bb%97i-patching"
+>Vá lỗi (Patching)</a></li>
+</ul>
+</li>
+<li><a
+  class="gblog-markdown__link"
+  href="#best-practices-v%e1%bb%9bi-git"
+>Best Practices với Git</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="#t%e1%bb%95ng-k%e1%ba%bft"
+>Tổng kết</a></li>
+</ul>
+<br>
+Bài biết sẽ giới thiệu những kiến thức và các câu lệnh cơ bản của Git
 <br>
 Trước khi đi đến khái niệm của Git, chúng ta cần biết về kiểm soát phiên bản - version control
 <div class="flex align-center gblog-post__anchorwrap">
@@ -300,7 +370,7 @@ Trước khi đi đến khái niệm của Git, chúng ta cần biết về ki�
     >
         Version control là gì? Tại sao chúng ta cần quan tâm?
     </h2>
-    <a data-clipboard-text="http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/#version-control-là-gì-tại-sao-chúng-ta-cần-quan-tâm" class="gblog-post__anchor clip flex align-center" aria-label="Anchor Version control là gì? Tại sao chúng ta cần quan tâm?" href="#version-control-l%c3%a0-g%c3%ac-t%e1%ba%a1i-sao-ch%c3%bang-ta-c%e1%ba%a7n-quan-t%c3%a2m">
+    <a data-clipboard-text="https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#version-control-là-gì-tại-sao-chúng-ta-cần-quan-tâm" class="gblog-post__anchor clip flex align-center" aria-label="Anchor Version control là gì? Tại sao chúng ta cần quan tâm?" href="#version-control-l%c3%a0-g%c3%ac-t%e1%ba%a1i-sao-ch%c3%bang-ta-c%e1%ba%a7n-quan-t%c3%a2m">
         <svg class="gblog-icon gblog_link"><use xlink:href="#gblog_link"></use></svg>
     </a>
 </div>
@@ -361,7 +431,7 @@ Các loại Version Control System (VCS): <br></p>
     >
         Git là gì?
     </h2>
-    <a data-clipboard-text="http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/#git-là-gì" class="gblog-post__anchor clip flex align-center" aria-label="Anchor Git là gì?" href="#git-l%c3%a0-g%c3%ac">
+    <a data-clipboard-text="https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#git-là-gì" class="gblog-post__anchor clip flex align-center" aria-label="Anchor Git là gì?" href="#git-l%c3%a0-g%c3%ac">
         <svg class="gblog-icon gblog_link"><use xlink:href="#gblog_link"></use></svg>
     </a>
 </div>
@@ -371,7 +441,7 @@ Các loại Version Control System (VCS): <br></p>
     >
         Khi nào nên sử dụng Git?
     </h2>
-    <a data-clipboard-text="http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/#khi-nào-nên-sử-dụng-git" class="gblog-post__anchor clip flex align-center" aria-label="Anchor Khi nào nên sử dụng Git?" href="#khi-n%c3%a0o-n%c3%aan-s%e1%bb%ad-d%e1%bb%a5ng-git">
+    <a data-clipboard-text="https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#khi-nào-nên-sử-dụng-git" class="gblog-post__anchor clip flex align-center" aria-label="Anchor Khi nào nên sử dụng Git?" href="#khi-n%c3%a0o-n%c3%aan-s%e1%bb%ad-d%e1%bb%a5ng-git">
         <svg class="gblog-icon gblog_link"><use xlink:href="#gblog_link"></use></svg>
     </a>
 </div>
@@ -387,7 +457,7 @@ Các loại Version Control System (VCS): <br></p>
     >
         Tại sao bạn nên chọn Git thay vì các DVCSs khác?
     </h2>
-    <a data-clipboard-text="http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/#tại-sao-bạn-nên-chọn-git-thay-vì-các-dvcss-khác" class="gblog-post__anchor clip flex align-center" aria-label="Anchor Tại sao bạn nên chọn Git thay vì các DVCSs khác?" href="#t%e1%ba%a1i-sao-b%e1%ba%a1n-n%c3%aan-ch%e1%bb%8dn-git-thay-v%c3%ac-c%c3%a1c-dvcss-kh%c3%a1c">
+    <a data-clipboard-text="https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#tại-sao-bạn-nên-chọn-git-thay-vì-các-dvcss-khác" class="gblog-post__anchor clip flex align-center" aria-label="Anchor Tại sao bạn nên chọn Git thay vì các DVCSs khác?" href="#t%e1%ba%a1i-sao-b%e1%ba%a1n-n%c3%aan-ch%e1%bb%8dn-git-thay-v%c3%ac-c%c3%a1c-dvcss-kh%c3%a1c">
         <svg class="gblog-icon gblog_link"><use xlink:href="#gblog_link"></use></svg>
     </a>
 </div>
@@ -408,7 +478,7 @@ Các loại Version Control System (VCS): <br></p>
     >
         Các tính năng nổi bật của Git
     </h2>
-    <a data-clipboard-text="http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/#các-tính-năng-nổi-bật-của-git" class="gblog-post__anchor clip flex align-center" aria-label="Anchor Các tính năng nổi bật của Git" href="#c%c3%a1c-t%c3%adnh-n%c4%83ng-n%e1%bb%95i-b%e1%ba%adt-c%e1%bb%a7a-git">
+    <a data-clipboard-text="https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#các-tính-năng-nổi-bật-của-git" class="gblog-post__anchor clip flex align-center" aria-label="Anchor Các tính năng nổi bật của Git" href="#c%c3%a1c-t%c3%adnh-n%c4%83ng-n%e1%bb%95i-b%e1%ba%adt-c%e1%bb%a7a-git">
         <svg class="gblog-icon gblog_link"><use xlink:href="#gblog_link"></use></svg>
     </a>
 </div>
@@ -457,15 +527,572 @@ Thì thì lưu trữ dữ liệu như một chuỗi các ảnh chụp (snapshot)
     >
         Các khái niệm cơ bản trong Git
     </h2>
-    <a data-clipboard-text="http://localhost:1313/posts/git-c%C6%A1-b%E1%BA%A3n/#các-khái-niệm-cơ-bản-trong-git" class="gblog-post__anchor clip flex align-center" aria-label="Anchor Các khái niệm cơ bản trong Git" href="#c%c3%a1c-kh%c3%a1i-ni%e1%bb%87m-c%c6%a1-b%e1%ba%a3n-trong-git">
+    <a data-clipboard-text="https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#các-khái-niệm-cơ-bản-trong-git" class="gblog-post__anchor clip flex align-center" aria-label="Anchor Các khái niệm cơ bản trong Git" href="#c%c3%a1c-kh%c3%a1i-ni%e1%bb%87m-c%c6%a1-b%e1%ba%a3n-trong-git">
         <svg class="gblog-icon gblog_link"><use xlink:href="#gblog_link"></use></svg>
     </a>
 </div>
 <p>Để sử dụng Git hiệu quả, trước tiên các bạn cần hiểu một số khái niệm cốt lõi của Git</p>
 <ol>
-<li>Repository (Repo)
-&mdash;&mdash;- Updating &mdash;&mdash;-</li>
+<li>
+<p>Repository (Repo)
+Repository là nơi lưu trữ toàn bộ mã nguồn và lịch sử thay đổi của một dự án. Có 2 loại repository:</p>
+<ul>
+<li>Local Repository: Dữ liệu trên máy cá nhân của bạn</li>
+<li>Remote Repository: Dữ liệu nằm trên máy chủ Git như GitHub, GitLab, Bitbucket
+Một dự án thường có 2 Git thường bao gồm cả 2 loại, bạn sẽ làm việc với local và sau đó đồng bộ lên remote repository</li>
+</ul>
+</li>
+<li>
+<p>Commit
+Commit được hiểu là một ảnh chụp (snapshot) các thay đổi tại một thời điểm. Một commit sẽ lưu nội dung:</p>
+<ul>
+<li>Nội dung thay đổi</li>
+<li>Thời gian commit</li>
+<li>Người thực hiện commit</li>
+<li>Lời nhắn (commit message)
+Commit giúp quay lại phiên bản cũ và theo dõi quá trình phát triển của dự án</li>
+</ul>
+</li>
+<li>
+<p>Branch
+Nhánh, là dòng phát triển độc lập của dự án. Mặc định Git có một nhánh chính gọi là <code>main</code> hoặc <code>master</code>. Bạn có thể tạo nhánh để thực hiện việc thêm tính năng, sửa lỗi, thử nghiệm,.. mà không ảnh hưởng đến mã chính của dự án</p>
+</li>
+<li>
+<p>Merge
+Merge là hành độnh hợp nhất 2 nhánh lại với nhau, việc merge có thể tạo ra xung đột, Git sẽ báo để bạn xử lý</p>
+</li>
+<li>
+<p>Rebase
+Rebase là một cách khác để hợp nhất thay đổi giữa các nhánh, nhưng thay vì hợp nhất như merge thì rebase di chuyển lịch sử thay đổi của một nhánh lên đầu nhánh đích, rebase giúp lịch sử commit đơn giản nhưng cũng có thể xảy ra xung đột</p>
+</li>
+<li>
+<p>HEAD
+HEAD là con trỏ trỏ tới commit hiện tại bạn đang làm việc, nếu HEAD không gắn với nhánh nào, bạn đang ở trạng thái detached HEAD</p>
+</li>
 </ol>
+<div class="flex align-center gblog-post__anchorwrap">
+    <h2 id="cài-đặt-git"
+    >
+        Cài đặt Git
+    </h2>
+    <a data-clipboard-text="https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#cài-đặt-git" class="gblog-post__anchor clip flex align-center" aria-label="Anchor Cài đặt Git" href="#c%c3%a0i-%c4%91%e1%ba%b7t-git">
+        <svg class="gblog-icon gblog_link"><use xlink:href="#gblog_link"></use></svg>
+    </a>
+</div>
+<p>Cài đặt Git cho Linux:<br></p>
+<ul>
+<li>Nếu bạn sử dụng Fedora, hay những hệ điều hành RPM-based như RHEL hay CentOS, sử dụng dnf
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo dnf install git
+</span></span></code></pre></div></li>
+<li>Nếu bạn sử dụng Debian-base như Ubuntu, sử dụng apt
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install git
+</span></span></code></pre></div></li>
+</ul>
+<p>Chi tiết cài đặt cho từng hệ điều hành xem tại trang chính thức git: <a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/downloads"
+>download git</a></p>
+<div class="flex align-center gblog-post__anchorwrap">
+    <h2 id="các-câu-lệnh-git-cơ-bản"
+    >
+        Các câu lệnh Git cơ bản
+    </h2>
+    <a data-clipboard-text="https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#các-câu-lệnh-git-cơ-bản" class="gblog-post__anchor clip flex align-center" aria-label="Anchor Các câu lệnh Git cơ bản" href="#c%c3%a1c-c%c3%a2u-l%e1%bb%87nh-git-c%c6%a1-b%e1%ba%a3n">
+        <svg class="gblog-icon gblog_link"><use xlink:href="#gblog_link"></use></svg>
+    </a>
+</div>
+<div class="flex align-center gblog-post__anchorwrap">
+    <h3 id="khởi-tạo-và-nhận-kho-lưu-trữ-getting-creating-repository"
+    >
+        Khởi tạo và nhận kho lưu trữ (Getting, Creating Repository)
+    </h3>
+    <a data-clipboard-text="https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#khởi-tạo-và-nhận-kho-lưu-trữ-getting-creating-repository" class="gblog-post__anchor clip flex align-center" aria-label="Anchor Khởi tạo và nhận kho lưu trữ (Getting, Creating Repository)" href="#kh%e1%bb%9fi-t%e1%ba%a1o-v%c3%a0-nh%e1%ba%adn-kho-l%c6%b0u-tr%e1%bb%af-getting-creating-repository">
+        <svg class="gblog-icon gblog_link"><use xlink:href="#gblog_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-init"
+>init</a>
+Tạo một kho chứa rỗng hoặc khởi tạo lại kho lưu trữ hiện có
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> /path/to/my/codebase
+</span></span><span class="line"><span class="cl">git init      <span class="c1">#Tạo thư mục /path/to/my/codebase/.git</span>
+</span></span></code></pre></div></li>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-clone"
+>clone</a>
+Tải dữ liệu bản sao của kho chứ remote về máy cá nhân
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/user/project.git
+</span></span></code></pre></div></li>
+</ul>
+<div class="flex align-center gblog-post__anchorwrap">
+    <h3 id="chụp-hình-cơ-bản-snapshotting"
+    >
+        Chụp hình cơ bản (Snapshotting)
+    </h3>
+    <a data-clipboard-text="https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#chụp-hình-cơ-bản-snapshotting" class="gblog-post__anchor clip flex align-center" aria-label="Anchor Chụp hình cơ bản (Snapshotting)" href="#ch%e1%bb%a5p-h%c3%acnh-c%c6%a1-b%e1%ba%a3n-snapshotting">
+        <svg class="gblog-icon gblog_link"><use xlink:href="#gblog_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li>
+<p><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-add"
+>add</a>
+Thêm tệp vào khu vực staging để chuẩn bị commit.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git add file.txt      <span class="c1"># Thêm một tệp cụ thể</span>
+</span></span><span class="line"><span class="cl">git add .             <span class="c1"># Thêm tất cả thay đổi</span>
+</span></span></code></pre></div></li>
+<li>
+<p><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-status"
+>status</a>
+Kiểm tra trạng thái các tệp: đã thay đổi, đã staged hay chưa</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git status
+</span></span></code></pre></div></li>
+<li>
+<p><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-diff"
+>diff</a>
+Hiển thị sự khác biệt giữa các thay đổi. Hữu ích để xem chi tiết trước khi add hay commit.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git diff
+</span></span></code></pre></div></li>
+<li>
+<p><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-commit"
+>commit</a>
+Lưu snapshot hiện tại vào lịch sử Git.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git commit -m <span class="s2">&#34;lời nhắn commit&#34;</span>
+</span></span></code></pre></div></li>
+<li>
+<p><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-notes"
+>notes</a>
+Ghi chú thêm vào commit mà không thay đổi nội dung commit</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git notes add -m <span class="s2">&#34;Thêm ghi chú cho commit này&#34;</span>
+</span></span><span class="line"><span class="cl">git notes show &lt;commit&gt;
+</span></span></code></pre></div></li>
+<li>
+<p><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-restore"
+>restore</a>
+Khôi phục tệp về trạng thái trước đó</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git restore file.txt                      <span class="c1"># Khôi phục file.txt từ index</span>
+</span></span><span class="line"><span class="cl">git restore --source<span class="o">=</span>HEAD~1 file.txt      <span class="c1"># Khôi phục file từ commit cụ thể</span>
+</span></span></code></pre></div></li>
+<li>
+<p><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-reset"
+>reset</a>
+Reset lại index hoặc HEAD</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git reset --soft HEAD~1   <span class="c1"># Quay lại commit trước, giữ lại thay đổi trong staging</span>
+</span></span><span class="line"><span class="cl">git reset --hard HEAD~1   <span class="c1"># Xóa hoàn toàn thay đổi, quay về commit trước</span>
+</span></span></code></pre></div></li>
+<li>
+<p><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-rm"
+>rm</a>
+Xoá tệp khỏi Git (và có thể khỏi thư mục làm việc)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git rm file.txt            <span class="c1"># Xoá file khỏi repo và thư mục làm việc</span>
+</span></span><span class="line"><span class="cl">git rm --cached file.txt   <span class="c1"># Chỉ xoá khỏi Git (không xoá trên ổ đĩa)</span>
+</span></span></code></pre></div></li>
+<li>
+<p><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-mv"
+>mv</a>
+Đổi tên hoặc di chuyển file trong Git</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git mv old_name.txt new_name.txt
+</span></span></code></pre></div></li>
+</ul>
+<div class="flex align-center gblog-post__anchorwrap">
+    <h3 id="chia-nhánh-và-hợp-nhất-branching-merging"
+    >
+        Chia nhánh và hợp nhất (Branching, Merging)
+    </h3>
+    <a data-clipboard-text="https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#chia-nhánh-và-hợp-nhất-branching-merging" class="gblog-post__anchor clip flex align-center" aria-label="Anchor Chia nhánh và hợp nhất (Branching, Merging)" href="#chia-nh%c3%a1nh-v%c3%a0-h%e1%bb%a3p-nh%e1%ba%a5t-branching-merging">
+        <svg class="gblog-icon gblog_link"><use xlink:href="#gblog_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-branch"
+>branch</a>
+Tạo và quản lý nhánh
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git branch                  <span class="c1"># Liệt kê các nhánh</span>
+</span></span><span class="line"><span class="cl">git branch new-feature      <span class="c1"># Tạo nhánh mới</span>
+</span></span></code></pre></div></li>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-checkout"
+>checkout</a>
+Chuyển nhánh hoặc khôi phục file
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git checkout main
+</span></span><span class="line"><span class="cl">git checkout -- file.txt   <span class="c1"># Khôi phục file từ index</span>
+</span></span></code></pre></div></li>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-switch"
+>switch</a>
+Thay thế checkout để chuyển nhánh (dễ hiểu hơn)
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git switch main
+</span></span><span class="line"><span class="cl">git switch -c new-branch   <span class="c1"># Tạo và chuyển sang nhánh mới</span>
+</span></span></code></pre></div></li>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-merge"
+>merge</a>
+Gộp nhánh
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git merge feature-branch   <span class="c1"># Gộp nhánh vào nhánh hiện tại</span>
+</span></span></code></pre></div></li>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-mergetool"
+>mergetool</a>
+Mở giao diện resolve conflict
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git mergetool              <span class="c1"># Dùng tool GUI để xử lý xung đột merge</span>
+</span></span></code></pre></div></li>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-log"
+>log</a>
+Xem lịch sử commit
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git log --oneline --graph  <span class="c1"># Dạng cây ngắn gọn</span>
+</span></span></code></pre></div></li>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-stash"
+>stash</a>
+Lưu tạm thay đổi chưa commit
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git stash                  <span class="c1"># Lưu thay đổi tạm thời</span>
+</span></span><span class="line"><span class="cl">git stash pop              <span class="c1"># Khôi phục và xoá stash</span>
+</span></span></code></pre></div></li>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-tag"
+>tag</a>
+Gắn thẻ cho commit (ví dụ: release)
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git tag v1.0               <span class="c1"># Gắn tag nhẹ</span>
+</span></span><span class="line"><span class="cl">git tag -a v1.1 -m <span class="s2">&#34;release v1.1&#34;</span>  <span class="c1"># Gắn tag có mô tả</span>
+</span></span></code></pre></div></li>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-worktree"
+>worktree</a>
+Làm việc với nhiều thư mục cùng một repo
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git worktree add ../feature feature-branch
+</span></span></code></pre></div></li>
+</ul>
+<div class="flex align-center gblog-post__anchorwrap">
+    <h3 id="chia-sẻ-và-cập-nhật-dự-án-sharing-updating-project"
+    >
+        Chia sẻ và cập nhật dự án (Sharing, Updating Project)
+    </h3>
+    <a data-clipboard-text="https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#chia-sẻ-và-cập-nhật-dự-án-sharing-updating-project" class="gblog-post__anchor clip flex align-center" aria-label="Anchor Chia sẻ và cập nhật dự án (Sharing, Updating Project)" href="#chia-s%e1%ba%bb-v%c3%a0-c%e1%ba%adp-nh%e1%ba%adt-d%e1%bb%b1-%c3%a1n-sharing-updating-project">
+        <svg class="gblog-icon gblog_link"><use xlink:href="#gblog_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-fetch"
+>fetch</a>
+Lấy dữ liệu từ remote nhưng không merge
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git fetch origin
+</span></span></code></pre></div></li>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-pull"
+>pull</a>
+Fetch + Merge hoặc Rebase
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git pull origin main
+</span></span></code></pre></div></li>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-push"
+>push</a>
+Đẩy commit lên remote
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git push origin main
+</span></span></code></pre></div></li>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-remote"
+>remote</a>
+Quản lý remote
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git remote -v              <span class="c1"># Liệt kê remote</span>
+</span></span><span class="line"><span class="cl">git remote add origin &lt;url&gt;
+</span></span></code></pre></div></li>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-submodule"
+>submodule</a>
+Nhúng repo bên ngoài vào project
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git submodule add &lt;url&gt; path/
+</span></span><span class="line"><span class="cl">git submodule update --init --recursive
+</span></span></code></pre></div></li>
+</ul>
+<div class="flex align-center gblog-post__anchorwrap">
+    <h3 id="kiểm-tra-và-so-sánh-inspection-comparison"
+    >
+        Kiểm tra và so sánh (Inspection, Comparison)
+    </h3>
+    <a data-clipboard-text="https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#kiểm-tra-và-so-sánh-inspection-comparison" class="gblog-post__anchor clip flex align-center" aria-label="Anchor Kiểm tra và so sánh (Inspection, Comparison)" href="#ki%e1%bb%83m-tra-v%c3%a0-so-s%c3%a1nh-inspection-comparison">
+        <svg class="gblog-icon gblog_link"><use xlink:href="#gblog_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-show"
+>show</a>
+Hiển thị chi tiết commit
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git show HEAD
+</span></span></code></pre></div></li>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-log"
+>log</a>
+Xem nhật ký commit
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git log
+</span></span></code></pre></div></li>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-diff"
+>diff</a>
+So sánh sự khác biệt
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git diff                   <span class="c1"># So sánh working tree và index</span>
+</span></span><span class="line"><span class="cl">git diff HEAD              <span class="c1"># So sánh working tree với HEAD</span>
+</span></span></code></pre></div></li>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-difftool"
+>difftool</a>
+Dùng GUI tool để xem diff
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git difftool
+</span></span></code></pre></div></li>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-range-diff"
+>range-diff</a>
+So sánh 2 dải commit
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git range-diff origin/main...HEAD
+</span></span></code></pre></div></li>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-shortlog"
+>shortlog</a>
+Tổng hợp commit theo tác giả
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git shortlog -sne
+</span></span></code></pre></div></li>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-describe"
+>describe</a>
+Gán tên cho commit theo tag gần nhất
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git describe --tags
+</span></span></code></pre></div></li>
+</ul>
+<div class="flex align-center gblog-post__anchorwrap">
+    <h3 id="gỡ-lỗi---tìm-nguyên-nhân-debugging"
+    >
+        Gỡ lỗi - tìm nguyên nhân (Debugging)
+    </h3>
+    <a data-clipboard-text="https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#gỡ-lỗi---tìm-nguyên-nhân-debugging" class="gblog-post__anchor clip flex align-center" aria-label="Anchor Gỡ lỗi - tìm nguyên nhân (Debugging)" href="#g%e1%bb%a1-l%e1%bb%97i---t%c3%acm-nguy%c3%aan-nh%c3%a2n-debugging">
+        <svg class="gblog-icon gblog_link"><use xlink:href="#gblog_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-apply"
+>apply</a>
+Áp dụng file patch
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git apply fix.patch
+</span></span></code></pre></div></li>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-cherry-pick"
+>cherry-pick</a>
+Áp dụng commit cụ thể từ nhánh khác
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git cherry-pick &lt;commit-hash&gt;
+</span></span></code></pre></div></li>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-diff"
+>diff</a>
+So sánh sự khác biệt
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git diff                   <span class="c1"># So sánh working tree và index</span>
+</span></span><span class="line"><span class="cl">git diff HEAD              <span class="c1"># So sánh working tree với HEAD</span>
+</span></span></code></pre></div></li>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-rebase"
+>rebase</a>
+Chuyển base commit
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git rebase main
+</span></span></code></pre></div></li>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-revert"
+>revert</a>
+Tạo commit đảo ngược (tạo một commit mới có nội dung ngược lại với một commit đã tồn tại, nhằm hủy bỏ tác động của commit đó, nhưng vẫn giữ nguyên lịch sử commit)
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git revert &lt;commit-hash&gt;
+</span></span></code></pre></div></li>
+</ul>
+<div class="flex align-center gblog-post__anchorwrap">
+    <h3 id="vá-lỗi-patching"
+    >
+        Vá lỗi (Patching)
+    </h3>
+    <a data-clipboard-text="https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#vá-lỗi-patching" class="gblog-post__anchor clip flex align-center" aria-label="Anchor Vá lỗi (Patching)" href="#v%c3%a1-l%e1%bb%97i-patching">
+        <svg class="gblog-icon gblog_link"><use xlink:href="#gblog_link"></use></svg>
+    </a>
+</div>
+<ul>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-bisect"
+>bisect</a>
+Tìm commit gây lỗi theo nhị phân
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git bisect start
+</span></span><span class="line"><span class="cl">git bisect bad             <span class="c1"># Commit hiện tại bị lỗi</span>
+</span></span><span class="line"><span class="cl">git bisect good &lt;commit&gt;   <span class="c1"># Commit ổn định</span>
+</span></span></code></pre></div></li>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-blame"
+>blame</a>
+Tìm ai đã thay đổi dòng code nào
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git blame file.txt
+</span></span></code></pre></div></li>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs/git-grep"
+>grep</a>
+Tìm chuỗi trong toàn bộ repo
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git grep <span class="s2">&#34;function main&#34;</span>
+</span></span></code></pre></div></li>
+</ul>
+<div class="flex align-center gblog-post__anchorwrap">
+    <h2 id="best-practices-với-git"
+    >
+        Best Practices với Git
+    </h2>
+    <a data-clipboard-text="https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#best-practices-với-git" class="gblog-post__anchor clip flex align-center" aria-label="Anchor Best Practices với Git" href="#best-practices-v%e1%bb%9bi-git">
+        <svg class="gblog-icon gblog_link"><use xlink:href="#gblog_link"></use></svg>
+    </a>
+</div>
+<p>Đây một số best practices được tổng hợp dựa trên lý thuyết nền tảng, những kinh nghiệm làm việc của cá nhân tôi và những chia sẻ của cộng đồng sử dụng Git</p>
+<ol>
+<li>
+<p><strong>Kiểm tra thay đổi trước khi commit</strong>
+<br>Luôn xem lại thay đổi kỹ lưỡng trước khi commit</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git diff
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Commit rõ ràng, ngắn gọn, có ý nghĩa</strong></p>
+<ul>
+<li>Không nên:
+<ul>
+<li><code>Update</code></li>
+<li><code>Fix bug</code></li>
+</ul>
+</li>
+<li>Nên:
+<ul>
+<li><code>Fix login form validation</code></li>
+<li><code>Refactor user authentication logic</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Commit nhỏ, rõ ràng về mặt logic</strong></p>
+<ul>
+<li>Nên:
+<ul>
+<li><code>Add password confirmation field</code></li>
+<li><code>Fix typo in README</code></li>
+</ul>
+</li>
+<li>Không nên:
+<ul>
+<li><code>Add feature + fix 2 unrelated bugs</code></li>
+</ul>
+</li>
+<li>Ví dụ theo <a
+  class="gblog-markdown__link"
+  href="https://www.conventionalcommits.org/"
+>Conventional Commits</a>:
+<ul>
+<li><code>feat: add search bar to header</code></li>
+<li><code>fix: handle empty input in login form</code></li>
+<li><code>docs: update API usage in README</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Dùng git stash khi đang dở dang</strong></p>
+<ul>
+<li>Khi bạn đang làm dang dở nhưng cần chuyển sang một nhánh khác (ví dụ để fix bug khẩn cấp), git stash cho phép bạn:
+<ul>
+<li>Lưu lại những thay đổi tạm thời.</li>
+<li>Trả lại repo về trạng thái sạch sẽ (working directory clean) mà không mất công việc đang làm.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Sử dụng nhánh (branch) hợp lý</strong></p>
+<ul>
+<li><code>main</code>: Mã ổn định, có thể deploy</li>
+<li><code>feature-&lt;tên&gt;</code>: Phát triển tính năng</li>
+<li><code>bugfix-&lt;tên&gt;</code>: Sửa lỗi</li>
+<li><code>hotfix-&lt;tên&gt;</code>: Sửa lỗi khẩn cấp</li>
+<li><code>release-&lt;version&gt;</code>: Chuẩn bị phát hành</li>
+</ul>
+</li>
+<li>
+<p><strong>Không commit file cấu hình cá nhân, commit sercet (mật khẩu, API key)</strong></p>
+<ul>
+<li>Tránh commit .env, config.local.json, v.v.</li>
+<li>Nên tạo file mẫu như .env.example</li>
+</ul>
+</li>
+</ol>
+<div class="flex align-center gblog-post__anchorwrap">
+    <h2 id="tổng-kết"
+    >
+        Tổng kết
+    </h2>
+    <a data-clipboard-text="https://duonggha13.github.io/posts/git-c%C6%A1-b%E1%BA%A3n/#tổng-kết" class="gblog-post__anchor clip flex align-center" aria-label="Anchor Tổng kết" href="#t%e1%bb%95ng-k%e1%ba%bft">
+        <svg class="gblog-icon gblog_link"><use xlink:href="#gblog_link"></use></svg>
+    </a>
+</div>
+<p>Bài viết đã giới thiệu những kiến thức cơ bản của Git cũng như các câu lệnh cơ bản mà các lập trình viên thường hay sử dụng, cùng với một số best practices về Git. Hy vọng bài viết giúp các bạn làm quen và sử dụng Git một cách dễ dàng.</p>
+<p><strong>Tài liệu tham khảo</strong>:</p>
+<ul>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/docs"
+>Git Documents</a></li>
+<li><a
+  class="gblog-markdown__link"
+  href="https://git-scm.com/book/en/v2"
+>Pro Git Book</a></li>
+</ul>
 
     </section>
   </article>
